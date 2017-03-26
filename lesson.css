@@ -1,0 +1,34 @@
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  /* make it so high that only one section is shown at once */
+  min-height: 1200px;
+}
+
+section h1 {
+  background-color: teal;
+  font-size: 3rem;
+  color: white;
+  margin-top: 0;
+  padding: 4rem 2rem 1rem;
+}
+
+section p {
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+
+section li {
+  font-size: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.pull-right {
+  float: right;
+}
