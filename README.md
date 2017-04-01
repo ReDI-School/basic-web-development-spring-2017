@@ -1,14 +1,16 @@
 # Curriculum
 
 Curriculum in html. Each lesson is one html file, and each slide
-within it is a section with an id with the slide number, e.g.
+within it is a section. There is a little JavaScript that gives them
+ids and makes them switchable by clicking the left and right arrow
+keys. Example html:
 
 ```html
-<section id="slide-1">
+<section>
   <h1>Slide title</h1>
   <p>Slide body</p>
 </section>
-<section id="slide-2">
+<section>
   ...
 </section>
 ```

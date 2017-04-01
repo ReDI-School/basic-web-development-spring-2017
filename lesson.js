@@ -2,6 +2,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var slides = document.getElementsByTagName('section')
 
+  // Add numbered ids to slides
+  for(var i = 0; i < slides.length; i++) {
+    slides[i].id = 'slide-' + (i + 1)
+  }
+
   var changeSlideBy = function(by) {
     var current, next, match = window.location.hash.match(/#slide-(\d+)/)
     if (match) {
