@@ -1,54 +1,1177 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Intro and Tools</title>
-    <link rel="stylesheet" href="lesson.css">
-    <script src="lesson.js"></script>
-  </head>
-  <body>
-    <section>
-      <h1>Lesson Goals</h1>
-      <p>
-        Install & use web development programs
-      </p>
-      <p>
-        Code a simple webpage using HTML & CSS
-      </p>
-    </section>
-    <section>
-      <h1>Ain't nothin like an install party...</h1>
-      <p>
-        You will need (already installed):
-      </p>
+<head>
+<title>ReDI School | Basic Web Development | Spring 2017</title>
+<link rel="stylesheet" href="lesson.css">
+<script src="lesson.js"></script>
+</head>
+<body>
+<section class="first">
+<h1>Basic Web Development | HTML &amp; CSS <strong>ReDI School of Digital Integration</strong></h1>
+</section>
+
+<section>
+<h1>Basic Web Development</h1>
+<h2>HTML Basics</h2>
+</section>
+
+<section>
+  <h1>Lesson Goals</h1>
+  <p> Install & use web development programs </p>
+  <p> Code a simple webpage using HTML & CSS </p>
+</section>
+
+<section>
+  <h1>Ain't nothin like an install party...</h1>
+  <p> You will need (already installed): </p>
+  <ul>
+    <li>Google Chrome</li>
+    <li>Atom Code Editor</li>
+  </ul>
+</section>
+<section>
+  <h1>What is HTML?</h1>
+  <p> Created by Tim Berners-Lee in 1990 to
+    help scientists at CERN share
+    documents </p>
+  <div class="pull-right"> <img src="img/640px-Sir_Tim_Berners-Lee.jpg"> <br>
+    <small> Image Attribution: Paul Clarke (http://paulclarke.com/photography/) </small> </div>
+</section>
+<section>
+  <h1>What is HTML?</h1>
+  <ul>
+  <li><strong>H</strong>yper<strong>t</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage: HTML is a language for writing documents</li>
+<li><strong>Hypertext: </strong>Documents link to each other</li>
+<li><strong>Markup: </strong>Describes the semantic role of parts of a document</li>
+
+  </ul>
+</section>
+
+<!-- slide-->
+<section>
+<h1>Semantic Markup</h1>
+<h3>Semantic role = purpose</h3>
+<p>A document has different parts such as title, sections and images</p>
+<p><strong>Exercise: </strong>identify parts of a print document</p>
+
+</section>
+<!-- slide-->
+<section>
+<h1>HTML structure</h1>
+
+<p>An HTML document is made of text and 'markup' tags which are used to define the structure, appearance and function of the information.</p>
+<p>An HTML document is divided into two main section : Heading and Body</p>
+
+</section>
+<!-- slide-->
+<section>
+<h1>HTML structure</h1>
+
+<ul>
+<li>Heading - it contains informations about the document such as title, scripts, styles, meta information, and more<br>
+<strong>&lt;head&gt;&lt;/head&gt;</strong></li>
+<li>Body -  it contains everything you see on the web: text, images, graphic and other elements.<br><strong>&lt;body&gt;&lt;/body&gt;</strong></li>
+</ul>
+
+</section>
+<!-- slide-->
+<section>
+<h1>Example of an HTML Doc</h1>
+<p>&lt;!DOCTYPE html&gt;<br>
+  &lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Title of the document&lt;/title&gt;<br>
+&lt;/head&gt;</p>
+  <p> &lt;body&gt;<br>
+    The content of the document...<br>
+  &lt;/body&gt;</p>
+  <p>&lt;/html&gt;</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>HTML elements</h1>
+  <p>&lt;p&gt;This is paragraph content.&lt;/p&gt;<br>
+    &lt;h1&gt;This is heading content.&lt;/h1&gt;<br>
+    &lt;div&gt;This is division content.&lt;/div&gt;<br>
+    &lt;br&gt; <br>
+    &lt;strong&gt;Display text stronger&lt;/strong&gt;<br>
+    &lt;img ...&gt;<br>
+    &lt;hr&gt;<br>
+    &lt;ul&gt;Unordered Lists &lt;/ul&gt; or &lt;ol&gt;Ordered list &lt;/ol&gt;<br>
+    &lt;li&gt; list items&lt;/li&gt;<br>
+    &lt;table&gt;&lt;/table&gt;<br>
+    &lt;th&gt;&lt;/th&gt;<br>
+  &lt;td&gt;&lt;/td&gt;</p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Let's Start Coding!</h1>
+  <p>Open Atom  and Google Chrome<br>
+    Create an HTML document and add </p>
+    
       <ul>
-        <li>Google Chrome</li>
-        <li>Sublime Text</li>
-        <li>Sublime Plugins</li>
-      </ul>
-    </section>
-    <section>
-      <h1>What is HTML?</h1>
-      <p>
-        Created by Tim Berners-Lee in 1990 to
-        help scientists at CERN share
-        documents
-      </p>
-      <div class="pull-right">
-        <img src="640px-Sir_Tim_Berners-Lee.jpg">
-        <br>
-        <small>
-          Image Attribution: Paul Clarke (http://paulclarke.com/photography/)
-        </small>
-      </div>
-    </section>
-    <section>
-      <h1>What is HTML?</h1>
-      <ul>
-        <li>Hypertext Markup Language</li>
-        <li>HTML is a language for writing documents</li>
-        <li>Hypertext: Documents link to each other</li>
-        <li>Markup: Describes the semantic role of parts of a document</li>
-      </ul>
-    </section>
-  </body>
+    <li>Title</li>
+    <li>Paragraph</li>
+    <li>Heading</li>
+    <li>List</li>
+    <li>Image </li>
+  </ul>
+
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Normal HTML elements</h1>
+  <p>Normal tags have start and end, content in the middle<br>
+  &lt;p&gt;bla bla&lt;/p&gt;</p>
+  <p>Can be nested:<br>
+    &lt;p&gt;bla bla &lt;strong&gt;bla&lt;/strong&gt; bla&lt;/p&gt;</p>
+  <p>But never interleaved!<br>
+    WRONG: &lt;p&gt;&lt;strong&gt;&lt;/p&gt;&lt;/strong&gt;  !</p>
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Empty HTML elements</h1>
+  <p>Some elements have no content, so no closing tag:</p>
+  <p>&lt;br&gt;<br>
+    &lt;img&gt;<br>
+    &lt;hr&gt;<br>
+    &lt;input&gt;</p>
+  <p>Can occur within the content of normal elements:<br>
+    &lt;p&gt; ... &lt;br&gt; ... &lt;/p&gt;</p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Element attributes</h1>
+  <p>Elements can have attributes. Inside (start) tag:</p>
+  <p>&lt;img src=&quot;images/test.jpg&quot;&gt;</p>
+  <p>&lt;p class=&quot;test&quot;&gt; ... &lt;/p&gt;</p>
+  <p>Multiple attributes:</p>
+  <p>&lt;img src=&quot;images/test.jpg&quot; alt="An image" class="test"&gt;</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Exercise</h1>
+  <p>Add all the tags around this text that was rendered from HTML:</p>
+  <h3>Scrambled eggs</h3>
+  <p>For 2 persons</p>
+  <p><strong>Ingredients</strong></p>
+
+    <ul>
+    <li>2 Eggs</li>
+    <li>Salt</li>
+    <li>Oil</li>
+  </ul>
+    <p><strong>Instructions</strong></p>
+    <ul>
+    <li>Heat the pan, add oil, then add the eggs.</li>
+    <li>Add salt</li>
+    <li>Scramble the eggs</li>
+    <li>When the eggs are ready to eat, serve them.</li>
+  </ul>
+   
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Solution</h1>
+  <p>&lt;!DOCTYPE html&gt;<br>
+    &lt;html&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Scrambled eggs&lt;/h1&gt;<br>
+&lt;p&gt;For 2 persons.&lt;/p&gt;<br>
+&lt;hr&gt;<br>
+&lt;h2&gt;Ingredients&lt;/h2&gt;<br>
+&lt;ul&gt;<br>
+&lt;li&gt;2 Eggs&lt;/li&gt;<br>
+&lt;li&gt;Salt&lt;/li&gt;<br>
+&lt;li&gt;Oil&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;h2&gt;Instructions&lt;/h2&gt;<br>
+&lt;p&gt;<br>
+Heat the pan, add oil, then &lt;strong&gt;add the eggs&lt;/strong&gt;. Add<br>
+salt. Scramble the eggs.<br>
+&lt;/p&gt;<br>
+&lt;p&gt;<br>
+When the eggs are ready to eat, serve them.<br>
+&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>URLs</h1>
+  <p>A full URL has protocol, domain, path</p>
+  <p>http://mysite.com/images/picture.jpg</p>
+  <p>Here the protocol is http, domain is mysite.com, path is /images/picture.jpg</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Relative URLs</h1>
+  <p>If a URL is not complete, the browser uses the current context </p>
+  <p>//mysite.com/images/picture.jpg<br>
+    /images/picture.jpg<br>
+    images/picture.jpg</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Embed image</h1>
+  <p>Exercise</p>
+  <ul>
+    <li>Create folder called <strong>images</strong></li>
+    <li>Download an image into it</li>
+    <li>Embed image in web page</li>
+  </ul>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Link</h1>
+  <p>To link to another page, add an a tag, with an href attribute</p>
+  <p>&lt;a href="http://myothersite.com/"&gt;The link text&lt;/a&gt;</p>
+  <p>Exercise: create a new html file, and link with relative URL to it</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Image as Link</h1>
+  <p>So far we have made text links.</p>
+  <p>How can we make an image into a link?</p>
+
+</section>
+
+
+<section>
+<h1>Basic Web Development</h1>
+<h2>CSS Basics</h2>
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Lesson Goals</h1>
+  
+  <ul>
+    <li>Learn the basics of using CSS to create styles and layouts</li>
+    <li>Review HTML and integrate it with CSS</li>
+  </ul>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Review</h1>
+  <p>Present your home page from last week to the group. Discuss:</p>
+  <ul>
+    <li>A design decision you made</li>
+    <li>One thing you are happy with</li>
+    <li>One thing you found difficult or frustrating</li>
+  </ul>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>What is CSS?</h1>
+  <ul>
+    <li>Stands for Cascading Style Sheets</li>
+    <li>Describes how HTML elements are to be displayed on different screens and print</li>
+    <li>HTML documents have a tree-structure; CSS makes good use of it through inheritance.</li>
+    <li>HTML elements inherit stylistic properties through CSS</li>
+  </ul>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Why CSS?</h1>
+  <ul>
+    <li>Inline styles are hard to maintain and update</li>
+    <li>Separate presentation from content</li>
+    <li>Quickly update styles for the whole document</li>
+    <li>Swap between different styles, e.g. for accessibility or to update a design</li>
+  </ul>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>CSS Syntax</h1>
+  <p>selector {<br>
+property:value;<br>
+}<br>
+Properties are things like background, color, width and height.</p>
+ 
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Selectors</h1>
+  <p>Selectors allow us to pick an element or elements on the page and add style properties to it. We can set all links to be red:<br>
+    a {<br>
+    color:red;<br>
+  }</p>
+  
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Selectors - elements</h1>
+  <p>All HTML elements can be used as selectors:<br>
+    ul {<br>
+background:green;<br>
+}<br>
+div {<br>
+background:yellow;<br>
+}</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Box Model</h1>
+  <ul>
+    <li>Every element on the page is a rectangle. </li>
+    <li>Every rectangle can have a height, width, margin, borders and padding. </li>
+  </ul>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Box Model</h1>
+
+    <ul>
+    <li>It's the job of the browser to figure out from our CSS the size of each rectangle and where it should be placed on the page.</li>
+    <li> The box model describes some of the rules for doing this.</li>
+  </ul>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Box Model</h1>
+    <img src="img/boxmodel.jpg" width="378" height="155" class="pull-right">
+
+<p>div {<br>
+    width:400px;<br>
+    height:100px;<br>
+    margin:20px;<br>
+    padding:20px;<br>
+    border-width:6px;<br>
+  }</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Box Model - Box Sizing</h1>
+      <img src="img/boxmodel2.jpg" width="378" height="155" class="pull-right">
+
+  <p>div {<br>
+    width:452px;<br>
+    height:100px;<br>
+    margin:20px;<br>
+    padding:20px;<br>
+    border-width:6px;<br>
+    box-sizing:border-box;<br>
+    }<br>
+  Width is 452px: 360+20x2+20x2+6+6</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Most used properties</h1>
+
+<table>
+<tr>
+<th>Property</th>
+<th>Values</th>
+<th>Used with Elements</th>
+</tr>
+
+<tr>
+<td>color</td>
+<td>#RRGGBB (Red, Green, Blue hex values)</td>
+<td>any element that contains text</td>
+</tr>
+
+<tr>
+<td>text-align </td>
+<td>left | right | center | justify </td>
+<td>block elements h1..h6, p, li, etc.</td>
+</tr>
+
+<tr>
+<td>Text-decoration</td>
+<td>none | underline | overline | line-through | blink </td>
+<td>mostly with a (anchor) elements</td>
+</tr>
+
+<tr>
+<td>text-transformation </td>
+<td>none | capitalize | uppercase | lowercase</td>
+<td>any element that contains text</td>
+</tr>
+
+<tr>
+<td>line-height</td>
+<td>% or em/rem/px </td>
+<td>block elements h1..h6, p, li, etc.</td>
+</tr>
+
+<tr>
+<td>letter-spacing </td>
+<td>normal or em/rem/px value </td>
+<td>any element that contains text</td>
+</tr>
+
+<tr>
+<td>font-family</td>
+<td>font or font-family [, font or font-family ...]</td>
+<td>any element that contains text</td>
+</tr>
+
+<tr>
+<td>font-size </td>
+<td>em/rem/px value </td>
+<td>any element that contains text</td>
+</tr>
+
+<tr>
+<td>font-style </td>
+<td>normal | italic | oblique </td>
+<td>any element that contains text</td>
+</tr>
+
+<tr>
+<td>font-weight</td>
+<td>normal | bold</td>
+<td>any element that contains text</td>
+</tr>
+
+
+</table>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Most used properties</h1>
+<table>
+<tr>
+<th>Property</th>
+<th>Values</th>
+<th>Used with Elements</th>
+</tr>
+
+<tr>
+<td>background-color </td>
+<td>#RRGGBB (Red, Green, Blue hex values) </td>
+<td>any element with a background</td>
+</tr>
+
+<tr>
+<td>background-image</td>
+<td>url(&quot;[image url]&quot;) </td>
+<td>mostly with body</td>
+</tr>
+
+<tr>
+<td>background-repeat </td>
+<td>repeat | repeat-x | repeat-y | no-repeat </td>
+<td>mostly with body</td>
+</tr>
+
+<tr>
+<td>background-position</td>
+<td>left | center | right | top | center | bottom</td>
+<td>mostly with body</td>
+</tr>
+
+<tr>
+<td>list-style-type</td>
+<td>disc | square | circle </td>
+<td>ul</td>
+</tr>
+
+<tr>
+<td>list-style-type</td>
+<td>decimal | lower-roman | upper-roman</td>
+<td>ol</td>
+</tr>
+
+<tr>
+<td>list-style-type</td>
+<td>lower-alpha | upper-alpha </td>
+<td>ol</td>
+</tr>
+
+
+
+</table>  
+
+<h3>Exercise</h3>
+<ul>
+    <li>Start a new css file for the recipe. </li>
+    <li>Color the text (H1, H2, LI, P). Use https://color.adobe.com/ for colors.</li>
+    <li>Try outlines, backgrounds and different fonts.</li>
+    <li>Add an image as a background</li>
+  </ul>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Selectors - ID</h1>
+  <p>Sometimes we don't want every element to be styled the same. So we need to use more specific selectors.</p>
+  <p>One type of selector is the id.</p>
+  <p>Each id must be unique - no more than one element on a single page can have the same id.</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Selectors - ID</h1>
+  <p>&lt;div id="header"&gt;My Header&lt;/div&gt;</p>
+  <p>#header {<br>
+    background:yellow;<br>
+    }</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Selectors - classes</h1>
+  <p>Classes are another useful selector.</p>
+  <p>They can be applied to many elements.</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Selectors - classes</h1>
+  <p>&lt;p class="citation"&gt;Blah blah&lt;/p&gt;<br>
+  &lt;p class="citation"&gt;Blah blah&lt;/p&gt;</p>
+  <p>.citation {<br>
+    border-left:10px solid green;<br>
+  }</p>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Nested selectors</h1>
+  <p>Selectors can be nested to give you more precise control.</p>
+  <p>&lt;div id="header"&gt;<br>&lt;a href="#home"&gt;Home&lt;/a&gt;<br>
+  &lt;/div&gt;</p>
+  <p>#header a {<br>
+    color:purple;<br>
+    }</p>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Pseudo selectors</h1>
+  <p>Pseudo selectors give us additional control. There are a few different types but we will only look at :hover<br>
+  The hover state of an element is how it looks when the mouse is over it. It's often used on links.</p>
+
+</section>
+
+
+
+<!-- slide-->
+<section>
+  <h1>Pseudo selectors</h1>
+  <p>&lt;a href="#home"&gt;Home&lt;/a&gt;</p>
+  <p>a {<br>
+    color:blue;<br>
+    }</p>
+  <p>a:hover {<br>
+    color:lightblue;<br>
+    }</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Connecting a stylesheet</h1>
+  <p>We can connect a stylesheet to our HTML document by linking to it in the &lt;head&gt; section</p>
+  <p>&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css/demo-style.css&quot;&gt;</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Specificity</h1>
+  <p>Not all selectors are equal in "power"</p>
+  <p>If there are two or more rules that apply to an element, the most specific selector is used</p>
+  <p>If the two rules have equal specificity, then the latest rule is applied.</p>
+  
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Specificity</h1>
+  <p>li {<br>
+color:green;<br>
+}</p>
+  <p>li.special {<br>
+    color:red;<br>
+    }</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Specificity</h1>
+<img src="img/specificity.jpg" width="428" height="260" class="image">
+</section>
+
+
+
+
+<!-- slide-->
+<section>
+  <h1>Specificity</h1>
+  <table>
+<tr>
+<th>Selector Type</th>
+<th>Value</th>
+<th>Example</th>
+</tr>
+
+<tr>
+<td>inline</td>
+<td>1000</td>
+<td>&lt;p style=&quot;color:red;&quot;&gt;Hi&lt;/p&gt;</td>
+</tr>
+
+<tr>
+<td>ID</td>
+<td>100</td>
+<td>#header</td>
+</tr>
+
+<tr>
+<td>Class</td>
+<td>10</td>
+<td>.citation</td>
+</tr>
+
+<tr>
+<td>element</td>
+<td>1</td>
+<td>ul</td>
+</tr>
+
+
+
+</table>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Specificity - Examples</h1>
+  <p><strong>#header a</strong><br>
+  1 id + 1 element = 100 + 1 = 101</p>
+  <p><strong>#main p.citation a</strong><br>
+    1 id + 1 class + 2 elements = 100 + 10 + 2 = 112</p>
+  
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Specificity</h1>
+  <p><a href="https://css-tricks.com/specifics-on-css-specificity/">https://css-tricks.com/specifics-on-css-specificity/</a></p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Activity</h1>
+  <p>Selectors Challenge!</p>
+  <ul>
+    <li><a href="http://www.w3schools.com/cssref/css_selectors.asp">http://www.w3schools.com/cssref/css_selectors.asp</a></li>
+    <li><a href="http://www.w3schools.com/cssref/default.asp">http://www.w3schools.com/cssref/default.asp</a></li>
+  </ul>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>CSS Layout</h1>
+  <p>We'll use the example files to explore CSS layout techniques:</p>
+  <ul>
+    <li>display.html</li>
+    <li>box-model.html</li>
+    <li>floats.html</li>
+  </ul>
+</section>
+
+
+
+<!-- slide-->
+<section>
+  <h1>Document Flow</h1>
+  <p>Document flow refers to the way the browser positions elements on the page.</p>
+  <p>In general, the browser starts at the top left of the page and starts placing elements one after another.</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Document Flow</h1>
+  <p>Document flow is most affected by a property called display.</p>
+  <p>There are two main display properties: block and inline.</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Document Flow</h1>
+  <p>Block elements expand to the full width of the available horizontal space. The next element will be placed underneath.</p>
+  <p>A div is an example of a block level element. It expands to the full width of the available space.</p>
+
+<div class="slide55"></div>
+</section>
+<!-- slide-->
+<section>
+  <h1>Document Flow</h1>
+  <p>Inline level elements are only as wide as their content. Multiple inline elements stack up next to each other and can be nested inside block level elements.</p>
+  <p>A span is an example of an inline level element.</p>
+<span class="slide56"></span>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Document Flow</h1>
+  <p>Block level elements are used for large pieces of content such as headings or text areas. </p>
+  <p>Inline level elements are used to style small areas, such as adding italics to a few words.</p>
+ 
+</section>
+<!-- slide-->
+<section>
+  <h1>Document Flow</h1>
+<img src="img/slide58.jpg" width="305" height="264" class="image">
+</section>
+<!-- slide-->
+<section>
+  <h1>Document Flow</h1>
+<table>
+<tr>
+<th>Block level elements</th>
+<th>Inline level elements</th>
+</tr>
+
+<tr>
+<td>header, footer, nav, section, main, div, table, form</td>
+<td>span, img, a</td>
+</tr>
+
+<tr>
+<td>h1,h2,h3,h4,h5,h6</td>
+<td>strong, em</td>
+</tr>
+
+<tr>
+<td>ul, ol, p</td>
+<td>button, input, label, select, textarea</td>
+</tr>
+
+
+
+
+</table>
+</section>
+<!-- slide-->
+<section>
+  <h1>Document Flow</h1>
+  <p>Using the CSS property display we can override the default display setting and change an element to be block or inline.</p>
+  <p>This is useful because it's not possible to set the width or height of inline level elements.</p>
+
+</section>
+<!-- slide-->
+<section>
+  <h1>Document Flow</h1>
+  <p>We can also hide an element by setting <strong>display:none;</strong></p>
+
+</section>
+<!-- slide-->
+<section>
+  <h1>Floats</h1>
+  <p>Floated elements are the fundamental tool for creating complex, grid based layouts.</p>
+  <p>A floated element does not obey the normal rules of document flow.</p>
+
+</section>
+<!-- slide-->
+<section>
+  <h1>Floats</h1>
+  <p>A block level floated element does not expand to the available horizontal space. It expands only as far as its content needs, or as its width property.</p>
+  <p>The next element will not start below the floated element, but next to it.</p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Floats</h1>
+  <p>This makes it possible to create a layout with a main section and sidebar, or multiple columns.</p>
+<img src="img/float.jpg" width="609" height="133" class="image">
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Clearfix</h1>
+  <p>There is an annoying problem with floated elements.</p>
+  <p>The parent of a floated element can no longer &quot;see&quot; the height of its children. This means it treats the elements as if there were <strong>height:0;</strong></p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Clearfix</h1>
+  <p>We can solve this using the clearfix technique.</p>
+  <p>.clearfix:before, .clearfix:after { <br>
+    content:&quot;&quot;; <br>
+    display:table; <br>
+  } </p>
+  <p>.clearfix:after { <br>
+    clear:both; <br>
+  } </p>
+  <p>.clearfix { <br>
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */ <br>
+  }</p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Clearfix</h1>
+  <p>Apply the clearfix class to the parent of the floated elements.</p>
+  <p>&lt;div class=&quot;clearfix&quot; style=&quot;background:red;&quot;&gt;<br>
+  &lt;div style=&quot;width:50%; float:left;&quot;&gt;<br>
+    text<br>
+  &lt;/div&gt;</p>
+  <p>  &lt;div style=&quot;width:50%;float:left;&quot;&gt;<br>
+    text<br>
+  &lt;/div&gt;<br>
+  &lt;/div&gt;</p>
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Clearfix</h1>
+<table class="noborder">
+<tr>
+<th colspan="2">Without clearfix</th>
+<th colspan="2">With clearfix</th>
+</tr>
+
+<tr>
+<td>text</td>
+<td>text</td>
+<td class="withclearfix">text</td>
+<td class="withclearfix">text</td>
+</tr>
+
+
+
+
+
+
+</table>
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Reset CSS</h1>
+  <p>Browsers apply different default styles</p>
+  <p>We use a short reset.css file to reset the default styles to all be the same across different browsers</p>
+  <p>This makes sure we are starting with a “clean slate”</p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Putting it all together</h1>
+  <p>So CSS! Much styles!</p>
+  
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Web fonts</h1>
+  <p>Web fonts allow us to go beyond system fonts and install any fonts we like on our websites.</p>
+  <p>You shouldn't go too crazy though - more than two fonts will slow down the page load time.</p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Web fonts - Google Fonts</h1>
+  <p>Free fonts resource<br>
+    Browse and make a selection, then add the generated link to your &lt;head&gt;<br>
+    Set your elements to have the desired fonts<br>
+  <a href="https://www.google.com/fonts">https://www.google.com/fonts</a></p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Web fonts with @font-face</h1>
+  <p>You can use commercial or free fonts<br>
+    Download a font pack and add it to a fonts folder on your website<br>
+    Use the @font-face command to tell the browser where to find the font files<br>
+  <a href="http://www.fontsquirrel.com/">http://www.fontsquirrel.com/</a></p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Cross Browser Issues</h1>
+  <p>Not all browsers interpret CSS in the same way</p>
+  <p>Mobile browsers may lack support for some properties</p>
+  <p>New properties are being introduced (CSS3)</p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Cross Browser Issues</h1>
+  <p>Vendor prefixes are sometimes needed:</p>
+  <p>-moz-border-radius<br>
+    -webkit-border-radius<br>
+    -ms-border-radius<br>
+    -o-border-radius<br>
+  border-radius</p>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Cross Browser Issues</h1>
+  <p><a href="http://caniuse.com/">http://caniuse.com/</a> is an excellent resource for working out what cutting edge features you can and can't use.</p>
+  <p>Stick to the principle of progressive enhancement: don't make cutting edge features crucial to your design.</p>
+
+</section>
+<!-- slide-->
+<section>
+  <h1>Let's make a website</h1>
+  <h2>Exercises</h2>
+
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Let's make a website</h1>
+  <h4>Let's build a personal website with three pages:</h4>
+  <ul>
+    <li>Home</li>
+    <li>Page 1</li>
+    <li>Page 2</li>
+  </ul>
+  
+    <h4>Goals: to practice and learn...</h4>
+  <ul>
+    <li>How to link pages</li>
+    <li>How to use the different HTML elements inside a page</li>
+    <li>How to make a navigation</li>
+    <li>How to give a website a consistent look and feel</li>
+  </ul>
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Let's make a website</h1>
+  <h4>The website will include </h4>
+  <ul>
+    <li>at least 3 titles (H1-H6)</li>
+    <li>List/s (ordered or unordered - UL, OL &gt; LI)</li>
+    <li>Body text (Paragraphs, P)</li>
+    <li>Divs to make groups (DIV)</li>
+    <li>Images</li>
+  </ul>
+  
+   <h4>We will </h4>
+  <ul>
+    <li>identify the pages with TITLE and ID</li>
+    <li>Identify some elements in the HTML with IDs and CLASSES</li>
+    <li>style the pages and elements with CSS</li>
+  </ul>
+  
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Navigation</h1>
+  <p>How to build a horizontal navigation using:</p>
+  <ul>
+    <li>UL and LI</li>
+    <li>ID</li>
+    <li>CSS pseudo-selectors (:hover) and nested elements</li>
+  </ul>
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Tables</h1>
+  <p>Tables and their tags:</p>
+  <ul>
+    <li>When to use a table</li>
+    <li>TABLE, TR, TH, TD tags</li>
+  </ul>
+</section>
+
+<!-- slide-->
+<section>
+  <h1>HTML Structure</h1>
+  <p>Let's add structural elements to our pages</p>
+  
+  <h4>&lt;header&gt;</h4>
+  <ul>
+    <li>Defines a header for a document or a section</li>
+  </ul>
+  
+    
+  <h4>&lt;nav&gt;</h4>
+  <ul>
+    <li>Defines a container for navigation links</li>
+  </ul>
+  
+    
+  <h4>&lt;section&gt;</h4>
+  <ul>
+    <li>Defines a section in a document</li>
+  </ul>
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>HTML Structure</h1>
+  <h4>&lt;article&gt;</h4>
+  <ul>
+    <li>Defines an independent self-contained article</li>
+  </ul>
+  
+    <h4>&lt;aside&gt;</h4>
+  <ul>
+    <li>Defines content aside from the content (like a sidebar)</li>
+  </ul>
+  
+    <h4>&lt;footer&gt;</h4>
+  <ul>
+    <li>Defines a footer for a document or a section</li>
+  </ul>
+</section>
+
+
+
+<!-- slide-->
+<section>
+  <h1>Let's add these tags to our sites</h1>
+  <p>Please add these tags to your site, <strong>ONLY</strong> when is relevant:</p>
+  <ul>
+    <li>&lt;header&gt;</li>
+    <li>&lt;nav&gt;</li>
+    <li>&lt;footer&gt;</li>
+    <li>&lt;section&gt;</li>
+    <li>&lt;aside&gt;</li>
+    <li>&lt;article&gt;</li>
+  </ul>
+</section>
+
+
+
+<!-- slide-->
+<section>
+  <h1>Image replacement and Table styling</h1>
+  <p>How to replace images for text with CSS</p>
+  <p><strong>Image Replacement</strong><br>
+    UL, LI<br>
+  Negative text indent, background properties, :hover</p>
+</section>
+
+
+
+<!-- slide-->
+<section>
+  <h1>Let's add a blog to our sites</h1>
+  <p>You can duplicate any of your pages to create the blog. </p>
+  <ul>
+    <li>The blog should include header, nav, footer, #content, aside and article.</li>
+    <li>Let's do it together.</li>
+    <li>Don't forget to add the blog to the navigation on the other pages. </li>
+  </ul>
+</section>
+
+
+
+<!-- slide-->
+<section>
+  <h1>Next classes</h1>
+  <p>The goal of these exercises is have your site ready to go responsive.<br>
+    This means, the site will adapt to different screens and devices such as:<br>
+  </p>
+  <ul>
+    <li>smart phones</li>
+    <li>tablets</li>
+    <li>laptop </li>
+    <li>desktop</li>
+  </ul>
+</section>
+
+
+
+
+
+</body>
 </html>

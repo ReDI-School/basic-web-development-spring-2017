@@ -1,8 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
+	margin:0;
+	padding:0;
+    font-family: 'Open Sans', sans-serif;
 }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+	font-size:2.7rem;
+	padding-left:3rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+	font-size:2.4rem;
+	padding-left:3rem;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+	font-size:2rem;
+	padding-left:3rem;
+}
+
 
 section {
   /* make it so high that only one section is shown at once */
@@ -10,25 +33,102 @@ section {
 }
 
 section h1 {
-  background-color: teal;
-  font-size: 3rem;
-  color: white;
-  margin-top: 0;
-  padding: 4rem 2rem 1rem;
+	margin:0;
+	padding:3rem 3rem;
+	font-weight:400;
+	background-color:#59ADC5;
+	color:#fff;
+	font-size:3.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section h1 strong {
+	display:block;
+	color:#fff;
+	font-size:1.6rem;
+	font-weight:400;
 }
 
 section p {
-  font-size: 2rem;
-  padding: 0 2rem;
+  font-size: 1.8rem;
+  padding: 0 3rem;
+}
+
+section ul {
+  margin: 2rem 1rem 0 3rem;
 }
 
 section li {
-  font-size: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
+  font-size: 1.8rem;
 }
 
 .pull-right {
   float: right;
+}
+
+img.pull-right {
+  float: right;
+  margin:2rem;
+}
+
+
+table {
+	margin:2rem 3rem;
+	border:0;
+	border-top:1px solid #bbb;
+	border-left:1px solid #eee;
+	width:90%;
+	border-collapse:collapse;
+}
+
+table td, th {
+  font-size: 1.3rem;
+  text-align:left;
+  padding:.5rem;
+}
+
+tr {
+	border-bottom:1px solid #bbb;
+}
+
+td,th {
+	border-right:1px solid #eee;
+}
+
+.image {
+	margin:2rem 3rem;	
+}
+
+.slide55 {
+	border:3px solid #c00;
+	margin:3rem;
+	width:50%;
+	height:200px;
+}
+
+
+.slide56 {
+	border:3px solid #c00;
+	margin:3rem;
+	display:inline-block;
+	width:200px;
+	height:40px;
+}
+
+.withclearfix {
+	background-color:#c00;
+}
+
+table.noborder td, 
+table.noborder th,
+table.noborder, 
+table.noborder tr {
+	border:0;
+}
+
+.first {
+	background-image:url(img/class.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:0 0;
 }
