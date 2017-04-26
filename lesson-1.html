@@ -6,21 +6,153 @@
     <script src="lesson.js"></script>
   </head>
   <body>
-    <section class="first">
-      <h1>Basic Web Development | HTML &amp; CSS <strong>ReDI School of Digital Integration</strong></h1>
-    </section>
+   <section class="first">
+<h1>Basic Web Development | HTML &amp; CSS <strong>ReDI School of Digital Integration</strong></h1>
+</section>
 
-    <section>
-      <h1>Basic Web Development</h1>
-      <h2>HTML Basics</h2>
-    </section>
+<section>
+<h1>Basic Web Development</h1>
+<h2>HTML Basics</h2>
+</section>
 
-    <section>
-      <h1>Lesson Goals</h1>
-      <p> Install & use web development programs </p>
-      <p> Code a simple webpage using HTML & CSS </p>
-    </section>
+<section>
+  <h1>Lesson Goals</h1>
+  <p> Install & use web development programs </p>
+  <p> Code a simple webpage using HTML & CSS </p>
+</section>
 
-    <!-- TODO complete this -->
+
+<section>
+  <h1>What is HTML?</h1>
+  <p> Created by Tim Berners-Lee in 1990 to
+    help scientists at CERN share
+    documents </p>
+  <div class="pull-right"> <img src="img/640px-Sir_Tim_Berners-Lee.jpg"> <br>
+    <small> Image Attribution: Paul Clarke (http://paulclarke.com/photography/) </small> </div>
+</section>
+<section>
+  <h1>What is HTML?</h1>
+  <ul>
+  <li><strong>H</strong>yper<strong>t</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage: HTML is a language for writing documents</li>
+<li><strong>Hypertext: </strong>Documents link to each other</li>
+<li><strong>Markup: </strong>Describes the semantic role of parts of a document</li>
+
+  </ul>
+</section>
+
+<!-- slide-->
+<section>
+<h1>Semantic Markup</h1>
+<h3>Semantic role = purpose</h3>
+<p>A document has different parts such as title, sections and images</p>
+<p><strong>Exercise: </strong>identify parts of a print document</p>
+
+</section>
+<!-- slide-->
+<section>
+<h1>HTML structure</h1>
+
+<p>An HTML document is made of text and 'markup' tags which are used to define the structure, appearance and function of the information.</p>
+<p>An HTML document is divided into two main section : Heading and Body</p>
+
+</section>
+<!-- slide-->
+<section>
+<h1>HTML structure</h1>
+
+<ul>
+<li>Heading - it contains informations about the document such as title, scripts, styles, meta information, and more<br>
+<strong>&lt;head&gt;&lt;/head&gt;</strong></li>
+<li>Body -  it contains everything you see on the web: text, images, graphic and other elements.<br><strong>&lt;body&gt;&lt;/body&gt;</strong></li>
+</ul>
+
+</section>
+<!-- slide-->
+<section>
+<h1>Example of an HTML Doc</h1>
+<p>&lt;!DOCTYPE html&gt;<br>
+  &lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Title of the document&lt;/title&gt;<br>
+&lt;/head&gt;</p>
+  <p> &lt;body&gt;<br>
+    The content of the document...<br>
+  &lt;/body&gt;</p>
+  <p>&lt;/html&gt;</p>
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>HTML elements</h1>
+  <p>&lt;p&gt;This is paragraph content.&lt;/p&gt;<br>
+    &lt;h1&gt;This is heading content.&lt;/h1&gt;<br>
+    &lt;div&gt;This is division content.&lt;/div&gt;<br>
+    &lt;br&gt; <br>
+    &lt;strong&gt;Display text stronger&lt;/strong&gt;<br>
+    &lt;img ...&gt;<br>
+    &lt;hr&gt;<br>
+    &lt;ul&gt;Unordered Lists &lt;/ul&gt; or &lt;ol&gt;Ordered list &lt;/ol&gt;<br>
+    &lt;li&gt; list items&lt;/li&gt;<br>
+    &lt;table&gt;&lt;/table&gt;<br>
+    &lt;th&gt;&lt;/th&gt;<br>
+  &lt;td&gt;&lt;/td&gt;</p>
+
+</section>
+
+<section>
+  <h1>Ain't nothin like an install party...</h1>
+  <p> You will need (already installed): </p>
+  <ul>
+    <li>Google Chrome</li>
+    <li>Atom Code Editor</li>
+  </ul>
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Let's Start Coding!</h1>
+  <p>Open Atom  and Google Chrome<br>
+    Create an HTML document and add </p>
+    
+      <ul>
+    <li>Title</li>
+    <li>Paragraph</li>
+    <li>Heading</li>
+    <li>List</li>
+    <li>Image </li>
+  </ul>
+
+
+</section>
+
+
+<!-- slide-->
+<section>
+  <h1>Normal HTML elements</h1>
+  <p>Normal tags have start and end, content in the middle<br>
+  &lt;p&gt;bla bla&lt;/p&gt;</p>
+  <p>Can be nested:<br>
+    &lt;p&gt;bla bla &lt;strong&gt;bla&lt;/strong&gt; bla&lt;/p&gt;</p>
+  <p>But never interleaved!<br>
+    WRONG: &lt;p&gt;&lt;strong&gt;&lt;/p&gt;&lt;/strong&gt;  !</p>
+</section>
+
+<!-- slide-->
+<section>
+  <h1>Empty HTML elements</h1>
+  <p>Some elements have no content, so no closing tag:</p>
+  <p>&lt;br&gt;<br>
+    &lt;img&gt;<br>
+    &lt;hr&gt;<br>
+    &lt;input&gt;</p>
+  <p>Can occur within the content of normal elements:<br>
+    &lt;p&gt; ... &lt;br&gt; ... &lt;/p&gt;</p>
+
+</section>
+
+
+
   </body>
 </html>
