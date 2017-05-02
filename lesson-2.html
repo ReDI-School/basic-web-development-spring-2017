@@ -6,124 +6,282 @@
     <script src="lesson.js"></script>
   </head>
   <body>
- 
-<!-- slide-->
-<section>
-  <h1>Element attributes</h1>
-  <p>Elements can have attributes. Inside (start) tag:</p>
-  <p>&lt;img src=&quot;images/test.jpg&quot;&gt;</p>
-  <p>&lt;p class=&quot;test&quot;&gt; ... &lt;/p&gt;</p>
-  <p>Multiple attributes:</p>
-  <p>&lt;img src=&quot;images/test.jpg&quot; alt="An image" class="test"&gt;</p>
+    
+    <section>
+      <h1>Hello</h1>
+      <p>My name is Til</p>
+      <p>Lesson 2 - Basic Web Development</p>
+      <p>Plan for today:</p>
+      <ul>
+        <li>Scrambled eggs exercise</li>
+        <li>Present your projects</li>
+        <li>How to create links to other pages</li>
+        <li>Embed photo from phone</li>
+      </ul>        
+    </section>
 
-</section>
+    <section>
+      <h1>Exercise</h1>
+      <p>I have a recipe to cook scrambled eggs</p>
+      <p>But I only have the text yet</p>
+      <p>Help me to add the correct html tags</p>
+    </section>
 
+    <section>
+      <h1>Solution</h1>
+      <xmp>
+        <!DOCTYPE html>
+        <html>
+          <head></head>
+          <body>
+            <h1>Scrambled eggs</h1>
+            <p>For 2 persons</p>
+            <h2>Ingredients</h2>
+            <ul>
+              <li>2 Eggs</li>
+              <li>Salt</li>
+              <li>Oil</li>
+            </ul>
+            <h2>Instructions</h2>
+            <ul>
+              <li>Heat the pan, add oil, then add the eggs</li>
+              <li>Add salt</li>
+              <li>Scramble the eggs</li>
+              <li>When the eggs are ready to eat, serve them</li>
+            </ul>
+          </body>
+        </html>
+      </xmp>
+    </section>
 
-<!-- slide-->
-<section>
-  <h1>Exercise</h1>
-  <p>Add all the tags around this text that was rendered from HTML:</p>
-  <h3>Scrambled eggs</h3>
-  <p>For 2 persons</p>
-  <p><strong>Ingredients</strong></p>
+    <section>
+      <h1>Projects</h1>
+      <p>Which project do you want to work on during this course?</p>
+      <p>Show it to the class</p>
+      <p>How many different pages?</p>
+    </section>
 
-    <ul>
-    <li>2 Eggs</li>
-    <li>Salt</li>
-    <li>Oil</li>
-  </ul>
-    <p><strong>Instructions</strong></p>
-    <ul>
-    <li>Heat the pan, add oil, then add the eggs.</li>
-    <li>Add salt</li>
-    <li>Scramble the eggs</li>
-    <li>When the eggs are ready to eat, serve them.</li>
-  </ul>
-   
+    <section>
+      <h1>Project structure</h1>
+      <img src="lesson-2/my-project.png" style="float: right; margin: 2rem;" width=300>
+      <p>It's easier if you follow a structure</p>
+      <p>Create a folder for the project, e.g. <code>my-project</code></p>
+      <p>Name the start page <code>index.html</code></p>
+      <p>Add other pages named e.g. <code>other-page.html</code></p>
+    </section>
 
-</section>
+    <section>
+      <h1>Element attributes</h1>
+      <p>Elements can have attributes. Inside (start) tag:</p>
+      <p>
+        &lt;img src=&quot;images/test.jpg&quot;&gt;
+        <br>
+        Here <code>src</code> is the attribute, its value is <code>images/test.jpg</code>
+      </p>
+      <p>&lt;p class=&quot;test&quot;&gt; ... &lt;/p&gt;</p>
+      <p>
+        <strong>Multiple attributes</strong>
+        <br>
+        &lt;img src=&quot;images/test.jpg&quot; alt="An image" class="test"&gt;
+        <br>
+        Here there are three attributes: <code>src</code>, <code>alt</code> and <code>class</code>
+      </p>
+    </section>
 
-
-<!-- slide-->
-<section>
-  <h1>Solution</h1>
-  <p>&lt;!DOCTYPE html&gt;<br>
-    &lt;html&gt;<br>
-&lt;body&gt;<br>
-&lt;h1&gt;Scrambled eggs&lt;/h1&gt;<br>
-&lt;p&gt;For 2 persons.&lt;/p&gt;<br>
-&lt;hr&gt;<br>
-&lt;h2&gt;Ingredients&lt;/h2&gt;<br>
-&lt;ul&gt;<br>
-&lt;li&gt;2 Eggs&lt;/li&gt;<br>
-&lt;li&gt;Salt&lt;/li&gt;<br>
-&lt;li&gt;Oil&lt;/li&gt;<br>
-&lt;/ul&gt;<br>
-&lt;h2&gt;Instructions&lt;/h2&gt;<br>
-&lt;p&gt;<br>
-Heat the pan, add oil, then &lt;strong&gt;add the eggs&lt;/strong&gt;. Add<br>
-salt. Scramble the eggs.<br>
-&lt;/p&gt;<br>
-&lt;p&gt;<br>
-When the eggs are ready to eat, serve them.<br>
-&lt;/p&gt;<br>
-&lt;/body&gt;<br>
-&lt;/html&gt;</p>
-
-</section>
-
-
-<!-- slide-->
-<section>
-  <h1>URLs</h1>
-  <p>A full URL has protocol, domain, path</p>
-  <p>http://mysite.com/images/picture.jpg</p>
-  <p>Here the protocol is http, domain is mysite.com, path is /images/picture.jpg</p>
-
-</section>
-
-
-<!-- slide-->
-<section>
-  <h1>Relative URLs</h1>
-  <p>If a URL is not complete, the browser uses the current context </p>
-  <p>//mysite.com/images/picture.jpg<br>
-    /images/picture.jpg<br>
-    images/picture.jpg</p>
-
-</section>
-
-
-<!-- slide-->
-<section>
-  <h1>Embed image</h1>
-  <p>Exercise</p>
-  <ul>
-    <li>Create folder called <strong>images</strong></li>
-    <li>Download an image into it</li>
-    <li>Embed image in web page</li>
-  </ul>
-</section>
+    <section>
+      <h1>Link</h1>
+      <p>To link to another page, add an <code>a</code> tag, with an <code>href</code> attribute</p>
+      <p>&lt;a href="other-page.html"&gt;Other page&lt;/a&gt;</p>
+      <p>In your project: add a new file, and link to it from <code>index.html</code></p>
+    </section>
 
 
-<!-- slide-->
-<section>
-  <h1>Link</h1>
-  <p>To link to another page, add an a tag, with an href attribute</p>
-  <p>&lt;a href="http://myothersite.com/"&gt;The link text&lt;/a&gt;</p>
-  <p>Exercise: create a new html file, and link with relative URL to it</p>
+    <section>
+      <h1>URLs</h1>
+      <p>A full URL has protocol, domain, path</p>
+      <p>http://mysite.com/some-page-over-there.html</p>
+      <p>Here the protocol is <code>http</code>, domain is <code>mysite.com</code>, path is <code>/some-page-over-there.html</code></p>
+      <p>What other protocols do you know?</p>
+      <p>In your project: link to an external domain from one of your pages</p>
+    </section>
 
-</section>
+    <section>
+      <h1>More structure with relative URLs</h1>
+      <img src="lesson-2/my-project-with-image.png" style="float: right; margin: 2rem;" width=300>
+      <p>If a URL is not complete, the browser uses the current context</p>
+      <p>The image reference in the <code>img</code> tag is a URL as well</p>
+      <p>&lt;img src="images/some-image.jpg"&gt;</p>
+      <p>In your project: add a folder <code>images</code>, move picture into it, change <code>img</code></p>
+    </section>
 
 
-<!-- slide-->
-<section>
-  <h1>Image as Link</h1>
-  <p>So far we have made text links.</p>
-  <p>How can we make an image into a link?</p>
+    <section>
+      <h1>Image as Link</h1>
+      <p>So far we have made text links.</p>
+      <p>How can we make an image into a link?</p>
+      <p>Remember, what was inside the <code>a</code> tag when making a text link?</p>
+    </section>
 
-</section>
+    <section>
+      <h1>Image as Link - Solution</h1>
+      <p>
+        <a href="https://www.google.com">This is a text link</a>
+        <br>
+        Code:
+        <xmp>
+          <a href="https://www.google.com">This is a text link</a>
+        </xmp>
+      </p>
+      <p>
+        This is an image as a link: <a href="https://www.google.com"><img src="lesson-2/grafzahl.jpg"></a>
+      </p>
+      <p>
+        Code:
+        <xmp>
+          <a href="https://www.google.com"><img src="lesson-2/grafzahl.jpg"></a>
+        </xmp>
+      </p>
+    </section>
 
+    <section>
+      <h1>Photo</h1>
+      <img class="pull-right" src="lesson-2/selfie.jpg">
+      <p>Make a picture with your smartphone</p>
+      <p>Download the image</p>
+      <p>Embed it on your web page</p>
+      <p>Resize it if it is too large</p>
+    </section>
 
+    <section>
+      <h1>HTML tables - simple</h1>
+
+      <table style="width: 50%;">
+        <tr>
+          <td>Eggs</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Salt</td>
+          <td>A little bit</td>
+        </tr>
+      </table>
+
+      <p>
+        <xmp>
+          <table>
+            <tr>
+              <td>Eggs</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Salt</td>
+              <td>A little bit</td>
+            </tr>
+          </table>
+        </xmp>
+      </p>
+      <p>Wrap everything in <code>table</code>, rows in <code>tr</code>, cells in <code>td</code></p>
+    </section>
+
+    <section>
+      <h1>HTML tables / more structure</h1>
+
+      <table style="width: 50%;">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Salt</td>
+            <td>A little bit</td>
+          </tr>
+           <tr>
+            <td>Eggs</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        <xmp>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Salt</td>
+                <td>A little bit</td>
+              </tr>
+              <tr>
+                <td>Eggs</td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+        </xmp>
+      </p>
+      <p>Add <code>thead</code> and <code>tbody</code>, header cells are <code>th</code></p>
+    </section>
+
+    <section>
+      <h1>HTML 5 Elements for more structure</h1>
+      <p>
+        <strong>&lt;main&gt;...&lt;/main&gt;</strong>
+        <br>
+        Defines main part of a document
+      </p>
+
+      <p>
+        <strong>&lt;aside&gt;...&lt;/aside&gt;</strong>
+        <br>
+        Defines content aside from the main content (like a sidebar)
+      </p>
+
+      <p>
+        <strong>&lt;header&gt;...&lt;/header&gt;</strong>
+        <br>
+        Defines a header for a document or a section (different than head!)
+      </p>
+
+      <p>
+        <strong>&lt;footer&gt;...&lt;/footer&gt;</strong>
+        <br>
+        Defines a footer for a document or a section
+      </p>
+    </section>
+
+    <section>
+      <h1>HTML 5 Elements</h1>
+      <p>
+        There are many more
+      </p>
+      <p>
+        Useful to add meaningful structure to your page
+      </p>
+      <p>
+        Better than &lt;div&gt;...&lt;/div&gt; everywhere
+      </p>
+      <ul>
+        <li>header</li>
+        <li>nav</li>
+        <li>footer</li>
+        <li>section</li>
+        <li>aside</li>
+        <li>article</li>
+        <li>time</li>
+        <li>...</li>
+      </ul>
+      <p>
+        More e.g. here <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a>
+      </p>
+    </section>
+    
   </body>
 </html>
