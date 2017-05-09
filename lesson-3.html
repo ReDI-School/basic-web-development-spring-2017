@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lesson 3 - BWD - ReDI</title>
+    <link rel="stylesheet" href="lesson.css">
+    <script src="lesson.js"></script>
+  </head>
+  <body>
+    <section>
+        <h1>Repetition HTML tables</h1>
+        <p>Add blocks to the table</p>
+        <table style="width: 50%;">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Salt</td>
+              <td>A little bit</td>
+            </tr>
+             <tr>
+              <td>Eggs</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+    </section>
+
+    <section>
+      <h1>Repetition HTML tables</h1>
+
+      <table style="width: 50%;">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Salt</td>
+            <td>A little bit</td>
+          </tr>
+           <tr>
+            <td>Eggs</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        <xmp>
+          <body>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Salt</td>
+                    <td>A little bit</td>
+                  </tr>
+                  <tr>
+                    <td>Eggs</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+          </body>
+        </xmp>
+      </p>
+    </section>
+
+    <section>
+      <h1>HTML 5 Elements for more structure</h1>
+      <p>
+        <strong>&lt;main&gt;...&lt;/main&gt;</strong>
+        <br>
+        Defines main part of a document
+      </p>
+
+      <p>
+        <strong>&lt;header&gt;...&lt;/header&gt;</strong>
+        <br>
+        Defines a header for a document or a section (different than head!)
+      </p>
+
+      <p>
+        <strong>&lt;footer&gt;...&lt;/footer&gt;</strong>
+        <br>
+        Defines a footer for a document or a section
+      </p>
+
+      <p>
+        <strong>&lt;aside&gt;...&lt;/aside&gt;</strong>
+        <br>
+        Defines content aside from the main content (like a sidebar)
+      </p>
+    </section>
+
+    <section>
+      <h1>HTML 5 Elements</h1>
+      <p>
+        There are many more.
+      </p>
+      <p>
+        Useful to add meaningful structure to your page.
+      </p>
+      <p>
+        Never use &lt;div&gt;, if there is a semantically better fitting element like:
+      </p>
+      <ul>
+        <li>nav</li>
+        <li>section</li>
+        <li>article</li>
+
+        <li>main</li>
+        <li>header</li>
+        <li>footer</li>
+        <li>aside</li>
+        <li>...</li>
+      </ul>
+      <p>
+        More e.g. here <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a>
+      </p>
+    </section>
+
+    <section>
+        <h1>Task</h1>
+        <p>1. Create a new page and copy the following code from pastebin.com/raw/Cqp3qyAU<br>
+        2. Add the tags <strong>main</strong>, <strong>header</strong>, <strong>footer</strong>, <strong>aside</strong> and <strong>nav</strong> to structure the code reasonably<br>
+        3. Save as a new page</p>
+        <xmp style="font-size: 18px">
+            <h1>Best Recipes Website</h1>
+
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+
+            <h2>Scrambled eggs</h2>
+
+            <p>For 2 persons</p>
+
+            <h3>Instructions</h3>
+            <ol>
+              <li>Heat the pan, add oil and the eggs</li>
+              <li>Scramble the eggs</li>
+              <li>Serve</li>
+            </ol>
+
+            <h4>More Recipes</h4>
+            <ul>
+                <li>Boiled Egg</li>
+                <li>Blue milk</li>
+                <li>Spaetzle</li>
+            </ul>
+
+            <p>Copyright 2017 by Your Name</p>
+        </xmp>
+    </section>
+
+    <section>
+        <h1>One possible solution</h1>
+        <xmp style="font-size: 18px">
+            <header>
+                <h1>Best Recipes Website</h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="about.html">About us</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <h2>Scrambled eggs</h2>
+
+                <p>For 2 persons</p>
+
+                <h3>Instructions</h3>
+                <ol>
+                  <li>Heat the pan, add oil and the eggs</li>
+                  <li>Scramble the eggs</li>
+                  <li>Serve</li>
+                </ol>
+            </main>
+
+            <aside>
+                <h4>More Recipes</h4>
+                <ul>
+                    <li>Boiled Egg</li>
+                    <li>Blue milk</li>
+                    <li>Spaetzle</li>
+                </ul>
+            </aside>
+
+            <footer>
+                <p>Copyright 2017 by Your Name</p>
+            </footer>
+        </xmp>
+    </section>
+
+    <section>
+        <h1>Code comments</h1>
+        <p>Help yourself and future team mates by commenting your code!</p>
+        <h2>What are comments?</h2>
+        <p>
+        <ul>
+            <li>Text within the code, that isn't displayed to the visitor</li>
+            <li>Write in human understandable speech, not as code</li>
+            <li>Help to remember coding decisions</li>
+            <li>Help to structure the code better</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Code comments</h1>
+        <p>Example</p>
+        <xmp>
+            <!-- list of ingredients, every list
+                item is an ingredient of the recipe -->
+
+            <ul>
+                <li>Eggs</li>
+                <li>Oil</li>
+                <li>Salt</li>
+                <!-- salt could be removed,
+                    as it is not mandatory for scrambled eggs -->
+            </ul>
+        </xmp>
+    </section>
+
+    <section>
+        <h1>Task</h1>
+        <p>Write one comment in one of your pages,<br>
+             explaining a code decision<br>
+            in plain english using</p>
+        <xmp>
+            <!-- code comment here -->
+        </xmp>
+    </section>
+
+    <section>
+    <h1>Basic Web Development</h1>
+    <h2>CSS Basics</h2>
+    <h3>Lesson Goals</h3>
+    <ul>
+        <li>Learn the basics of using CSS to create styles and layouts</li>
+        <li>Review HTML and integrate it with CSS</li>
+    </ul>
+    </section>
+
+    <section>
+      <h1>What is CSS?</h1>
+      <ul>
+        <li>Cascading Style Sheets</li>
+        <li>Describes how HTML elements are to be displayed on different screens and in print</li>
+        <li>HTML documents have a tree-structure – CSS makes good use of it through inheritance</li>
+        <li>HTML elements inherit stylistic properties through CSS</li>
+      </ul>
+    </section>
+
+
+    <!-- slide-->
+    <section>
+      <h1>Why CSS?</h1>
+      <ul>
+        <li>Inline styles are hard to maintain and update</li>
+        <li>Separate presentation from content</li>
+        <li>Quickly update styles for the whole document</li>
+        <li>Swap between different styles, e.g. for accessibility, to update a design or to personalize the website for a visitor</li>
+      </ul>
+    </section>
+
+
+    <!-- slide-->
+    <section>
+      <h1>CSS Syntax</h1>
+      <xmp>
+        selector {
+            property: value;
+        }
+        </xmp>
+        <p>Properties are things like <strong>background</strong>, <strong>color</strong>, <strong>width</strong> and <strong>height</strong>.</p>
+
+    </section>
+
+
+    <!-- slide-->
+    <section>
+        <h1>Class Selectors</h1>
+        <p>Class selectors allow us to assign a class on the page and add style properties to it.<br><br> We can set a class to have red text:
+        <xmp>
+        .red {
+            color: red;
+        }
+        </xmp>
+      <p>The dot notation (<strong>.red</strong>) defines a class</p>
+    </section>
+
+    <section>
+        <h1>How to use a class</h1>
+        <p>Every element, that has the class assigned, inherits the class' properties.</p>
+        <xmp>
+            <a href="about.html" class="red">A red link</a>
+        </xmp>
+        <p><strong>Attention</strong>: the class is written without a dot in HTML</p>
+    </section>
+
+    <section>
+        <h1>Where to type CSS?</h1>
+        <h2>Task</h2>
+        <p>1. Add the following line to the &lt;head&gt; of one of your pages</p>
+        <xmp>
+            <head>
+                <link rel="stylesheet" href="stylesheet.css">
+            </head>
+        </xmp>
+        <p>2. Create a new file called <strong>stylesheet.css</strong></p>
+        <p>3. Add the following CSS to the stylesheet.css:</p>
+        <xmp>
+            .red {
+                color: red;
+            }
+        </xmp>
+        <p>4. Add a red link to one of your pages, using the css class .red</p>
+    </section>
+
+    <section>
+        <h1>Solution</h1>
+        <p>
+            <img src="lesson-3/red-class.png">
+        </p>
+    </section>
+
+    <section>
+        <h1>More CSS text properties</h2>
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Example values</th>
+            <tr>
+                <td>font-size</td>
+                <td>12px | 22px | 2em | 120%</td>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>serif | sans-serif | Arial, sans-serif</td>
+            </tr>
+            <tr>
+                <td>font-weight</td>
+                <td>300 | 500 | 700 | 900</td>
+            </tr>
+            <tr>
+                <td>font-style</td>
+                <td>normal | italic | oblique</td>
+            </tr>
+            <tr>
+                <td>line-height</td>
+                <td>normal | 1.5em | 180% | 6px | 0.8</td>
+            </tr>
+        </table>
+        <p>Play around with different classes or different styles</p>
+    </section>
+    <section>
+        <h1>Cascading</h1>
+        <p>An element may have several classes. It inherits the properties of every class</p>
+        <p>HTML</p>
+        <xmp>
+            <a href="index.html" class="blue underlined">blue underlined text</a>
+        </xmp>
+        <p>CSS</p>
+        <xmp>
+            .blue {
+                color: blue;
+            }
+
+            .underlined {
+                text-decoration: underline;
+            }
+        </xmp>
+    </section>
+  </body>
+</html>

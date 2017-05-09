@@ -100,8 +100,12 @@ td,th {
   border-right:1px solid #eee;
 }
 
+xmp {
+  font-size: 24px;
+}
+
 .image {
-  margin:2rem 3rem;       
+  margin:2rem 3rem;
 }
 
 .slide55 {
@@ -123,9 +127,9 @@ td,th {
   background-color:#c00;
 }
 
-table.noborder td, 
+table.noborder td,
 table.noborder th,
-table.noborder, 
+table.noborder,
 table.noborder tr {
   border:0;
 }
