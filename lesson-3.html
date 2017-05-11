@@ -341,6 +341,547 @@
         </p>
     </section>
 
+
+    <section>
+      <h1>Find the mistakes 1</h1>
+      <xmp>
+        <html>
+          <head>
+            <title>Title of the Page</title>
+          <body>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 1</h1>
+      <xmp>
+        <html>
+          <head>
+            <title>Title of the Page</title>
+          </head><!-- Head needs to be closed -->
+          <body>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 2</h1>
+      <xmp>
+        <html>
+          <body>
+            <table>
+              <thead>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </thead>
+              <tbody>
+                <td>Salt</td>
+                <td>a little bit</td>
+                <td>Oil</td>
+                <td>1 tablespoon</td>
+              </tbody>
+            </table>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 2</h1>
+      <xmp>
+        <html>
+          <body>
+            <table>
+              <thead>
+                <tr><!-- tr was missing -->
+                  <th>Ingredient</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><!-- tr was missing -->
+                  <td>Salt</td>
+                  <td>a little bit</td>
+                </tr>
+                <tr><!-- tr was missing -->
+                  <td>Oil</td>
+                  <td>1 tablespoon</td>
+                </tr>
+              </tbody>
+            </table>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 3</h1>
+      <xmp>
+        <html>
+          <body>
+            <header>
+              <h1>Name of the Website</h1>
+            </header>
+            <main>
+              A text about a recipe
+            </main>
+            <header>
+              Imprint
+            </header>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 3</h1>
+      <xmp>
+        <html>
+          <body>
+            <header>
+              <h1>Name of the Website</h1>
+            </header>
+            <main>
+              A text about a recipe
+            </main>
+            <footer><!-- the bottom of the page is the footer -->
+              Imprint
+            </footer>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 4</h1>
+      <xmp>
+        <html>
+          <body>
+            <header>
+              <h1>Name of the Website</h1>
+            </header>
+            <main>
+              A text about a recipe
+            </main>
+            <main>
+              A text about another recipe
+            </main>
+            <footer>
+              Imprint
+            </footer>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 4</h1>
+      <xmp>
+        <html>
+          <body>
+            <header>
+              <h1>Name of the Website</h1>
+            </header>
+            <main><!-- there may only be one main element per page -->
+              <section>
+                A text about a recipe
+              </section>
+              <section>
+                A text about another recipe
+              </section>
+            </main>
+            <footer>
+              Imprint
+            </footer>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 5</h1>
+      <xmp>
+        <html>
+          <body>
+            <header>
+              <nav>
+                <a href="index.html">Link to the Homepage</a>
+              </nav>
+            </header>
+            <body>
+              A text about a recipe here.
+            </body>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 5</h1>
+      <xmp>
+        <html>
+          <body>
+            <header>
+              <nav>
+                <a href="index.html">Link to the Homepage</a>
+              </nav>
+            </header>
+            <main><!-- there is only one body per page -->
+              A text about a recipe here.
+            </main>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 6</h1>
+      <xmp>
+        <html>
+          <header>
+            <title>Some page title</title>
+          </header>
+          <body>
+            <p>
+              Some text about the page here
+            </p>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 6</h1>
+      <xmp>
+        <html>
+          <head><!-- Do not confuse head with header -->
+            <title>Some page title</title>
+          </head>
+          <body>
+            <p>
+              Some text about the page here
+            </p>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 7</h1>
+      <xmp>
+        <html>
+          <head>
+            <title>Some page title</title>
+          </head>
+          <body>
+            <p>
+              Some text about the page here
+            </p>
+            <-- A comment, that the visitor cannot see in the browser -->
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 7</h1>
+      <xmp>
+        <html>
+          <head>
+            <title>Some page title</title>
+          </head>
+          <body>
+            <p>
+              Some text about the page here
+            </p>
+            <!-- a comment is done like this: -->
+            <!-- A comment, that the visitor cannot see in the browser -->
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+
+
+    <section>
+      <h1>Find the mistakes 8</h1>
+      <xmp>
+        <html>
+        <head>
+          <title>Some page title<title>
+        <head>
+          <body>
+            <h1>
+              The Title
+              </h1>
+            <p>
+              Some the about the homepage
+          </p>
+            <ul><li>Scrambled Eggs</li>
+              <li>Blue Milk</li>
+              <li>Smashed Potatoes</li>
+              <li>Burger and Fries</ul>
+            </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 8</h1>
+      <xmp>
+        <html>
+        <head>
+          <title>Some page title<title>
+        <head>
+          <body>
+            <h1>
+              The Title
+            </h1>
+            <p>
+              Some the about the homepage
+            </p>
+            <ul>
+              <li>Scrambled Eggs</li>
+              <li>Blue Milk</li>
+              <li>Smashed Potatoes</li>
+              <li>Burger and Fries</li><!-- this closing li was missing -->
+            </ul>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 9</h1>
+      <xmp>
+          <html>
+        <head>
+        <title>Some page title</title>
+            </head>
+        <body>
+          <p>
+        Some text about the page here
+        </p>
+        </body>
+          </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 9</h1>
+      <p>Indentation is important for the code quality. It improves the
+        understanding of the code, makes missing tags easier to find and
+        makes sure the code may be maintained by teammates or yourself
+        in the future.
+      </p>
+      <xmp>
+        <html>
+          <head>
+            <title>Some page title</title>
+          </head>
+          <body>
+            <p>
+              Some text about the page here
+            </p>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+
+    <section>
+      <h1>Find the mistake 10</h1>
+      <p>index.html</p>
+      <xmp>
+        <html>
+          <head>
+            <link href="stylesheet.css" rel="stylesheet">
+          </head>
+          <body>
+            <p class=".warning">
+              Some text about the page here
+            </p>
+          </body>
+        </html>
+      </xmp>
+      <p>stylesheet.css</p>
+      <xmp>
+        .warning {
+          color: red;
+        }
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 10</h1>
+      <p>index.html</p>
+      <xmp>
+        <html>
+          <head>
+            <link href="stylesheet.css" rel="stylesheet">
+          </head>
+          <body>
+            <p class="warning"><!-- in HTML the class is written without dot -->
+              Some text about the page here
+            </p>
+          </body>
+        </html>
+      </xmp>
+      <p>stylesheet.css</p>
+      <xmp>
+        .warning {
+          color: red;
+        }
+      </xmp>
+    </section>
+
+
+    <section>
+      <h1>Find the mistake 11</h1>
+      <p>index.html</p>
+      <xmp>
+        <html>
+          <head>
+            <link href="stylesheet.css" rel="stylesheet">
+          </head>
+          <body>
+            <p class="warning">
+              Some text about the page here
+            </p>
+          </body>
+        </html>
+      </xmp>
+      <p>stylesheet.css</p>
+      <xmp>
+        <p>More text about the Homepage here</p>
+
+        .warning {
+          color: red;
+        }
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 11</h1>
+      <p>No HTML in CSS</p>
+      <p>index.html</p>
+      <xmp>
+        <html>
+          <head>
+            <link href="stylesheet.css" rel="stylesheet">
+          </head>
+          <body>
+            <p class="warning">
+              Some text about the page here
+            </p>
+            <p>
+              More text about the Homepage here
+            </p>
+          </body>
+        </html>
+      </xmp>
+      <p>stylesheet.css</p>
+      <xmp>
+        .warning {
+          color: red;
+        }
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Repetition CSS syntax</h1>
+      <xmp>
+      selector {
+        property: value;
+      }
+      </xmp>
+
+      <P>
+      Selector: which element should change properties?<br>
+      Property: which property of the element should be changed?<br>
+      Value: how exactly should the property be defined?<br>
+      </p>
+
+    </section>
+
+    <section>
+      <h1>Examples CSS syntax</h1>
+      <xmp>
+      .warning {
+        color: red;
+      }
+      </xmp>
+
+      <p style="color: red">
+        All elements with the class "warning" should have red text
+      </p>
+    </section>
+
+    <section>
+      <h1>Examples CSS syntax</h1>
+      <xmp>
+      .error {
+        font-size: 2em;
+      }
+      </xmp>
+
+      <p style="font-size: 2em;">
+        All elements with the class "error" should have double sized text.
+      </p>
+    </section>
+
+    <section>
+      <h1>Examples CSS syntax</h1>
+      <xmp>
+      .sourcecode {
+        font-family: monospace;
+      }
+      </xmp>
+
+      <p style="font-family: monospace;">
+        All elements with the class "sourceode" should have monospaced text
+      </p>
+    </section>
+
+
+    <section>
+      <h1>Examples CSS syntax</h1>
+      <xmp>
+      .bigtext {
+        color: grey;
+        font-size: 40px;
+        font-weight: 700;
+      }
+      </xmp>
+
+      <p style="color: grey; font-size: 40px; font-weight: 700">
+        All elements with the class "bigtext" should have grey text with 40 pixels in size and
+        a bold font type.
+      </p>
+    </section>
+
+
+    <section>
+      <h1>Examples CSS syntax</h1>
+      <xmp>
+      .quotation {
+        color: blue;
+        font-family: Arial, sans-serif;
+        line-height: 2;
+      }
+      </xmp>
+
+      <p style="color: blue; font-family: sans-serif; line-height: 2">
+        All elements with the class "quotation" should have blue text with
+        the font type Arial, if it is available, or another type without serifs
+        and a line height of 2.
+      </p>
+    </section>
+
+
     <section>
         <h1>More CSS text properties</h2>
         <table>
@@ -353,7 +894,7 @@
             </tr>
             <tr>
                 <td>font-family</td>
-                <td>serif | sans-serif | Arial, sans-serif</td>
+                <td>serif | sans-serif | monospace | Arial, sans-serif</td>
             </tr>
             <tr>
                 <td>font-weight</td>
@@ -375,11 +916,11 @@
         <p>An element may have several classes. It inherits the properties of every class</p>
         <p>HTML</p>
         <xmp>
-            <a href="index.html" class="blue underlined">blue underlined text</a>
+            <a href="index.html" class="colorized underlined">blue underlined text</a>
         </xmp>
         <p>CSS</p>
         <xmp>
-            .blue {
+            .colorized {
                 color: blue;
             }
 
@@ -387,6 +928,68 @@
                 text-decoration: underline;
             }
         </xmp>
+    </section>
+
+    <section>
+      <h1>Practice</h1>
+      <p>Create a new folder, a new index.html and a new stylesheet.css <br> Link index.html with stylesheet.css and recreate this colorful page</p>
+      <p>
+        <img width="50%" src="lesson-3/colorful_page_template.png">
+      </p>
+    </section>
+
+    <section>
+      <h1>Example Solution</h1>
+      <p>
+        <img width="70%" src="lesson-3/colorful_page_solution.png">
+      </p>
+    </section>
+
+    <section>
+      <h1>Element selectors</h1>
+      <p>
+        Instead of classes you may choose to use elements as the selector
+      </p>
+      <p><strong style="color: #AA2222; text-decoration: underline">This is not considered best practice.</strong></p>
+      <p>Only use it for specific cases.</p>
+      <p>Example element selectors</p>
+      <xmp>
+        h1 {
+          color: red;
+        }
+
+        p {
+          line-height: 1.5;
+        }
+
+        header {
+          font-size: 1.5em;
+        }
+      </xmp>
+    </section>
+
+    <section>
+      <h1>ID selectors</h1>
+      <p><strong style="color: #AA2222; text-decoration: underline">This is not considered best practice.</strong></p>
+      <p>In practice there is hardly a reason to use ID selectors</p>
+      <p>index.html</p>
+      <xmp>
+        <h1 id="maintitle">This is the only main title on the page</h1>
+        <p id="firstparagrapg">Bold text</p>
+        <p>Standard text</p>
+      </xmp>
+
+      <p>stylesheet.css</p>
+      <xmp>
+        #firstparagraph {
+          font-weight: 700;
+        }
+
+        #maintitle {
+          color: red;
+          font-size: 48px;
+        }
+      </xmp>
     </section>
   </body>
 </html>
