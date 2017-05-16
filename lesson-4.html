@@ -1,0 +1,578 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lesson 4 - BWD - ReDI</title>
+    <link rel="stylesheet" href="lesson.css">
+    <script src="lesson.js"></script>
+    <style>
+      xmp {
+        margin: 0;
+      }
+      .mistake td {
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+
+    <section>
+      <h1>Recap HTML 5 Elements for more structure</h1>
+      <p>
+        Which ones can you remember?
+      </p>
+    </section>
+
+    <section>
+      <h1>Recap HTML 5 Elements for more structure</h1>
+      <p>
+        Which ones can you remember?
+      </p>
+      <ul>
+        <li>nav</li>
+        <li>section</li>
+        <li>article</li>
+
+        <li>main</li>
+        <li>header</li>
+        <li>footer</li>
+        <li>aside</li>
+        <li>...</li>
+      </ul>
+      <p>
+        More e.g. here <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a>
+      </p>
+    </section>
+
+    <section>
+      <h1>Recap Code comments</h1>
+      <h2>What are comments?</h2>
+    </section>
+
+    <section>
+      <h1>Recap Code comments</h1>
+      <h2>What are comments?</h2>
+      <p>Help yourself and future team mates by commenting your code!</p>
+      <p>
+        <ul>
+          <li>Text within the code, that isn't displayed to the visitor</li>
+          <li>Write in human understandable speech, not as code</li>
+          <li>Help to remember coding decisions</li>
+          <li>Help to structure the code better</li>
+        </ul>
+    </section>
+
+    <section>
+      <h1>Recap Code comments</h1>
+      <h2>Comment syntax in html</h2>
+    </section>
+
+    <section>
+      <h1>Recap Code comments</h1>
+      <h2>Comment syntax in html</h2>
+      <xmp>
+        <!-- this is a comment -->
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Recap CSS</h1>
+      <h2>Class selectors</h2>
+      <table>
+        <tr>
+          <td>
+            <strong>html</strong>
+          </td>
+          <td>
+            <xmp>
+<p class="intro">This is the intro</p>
+            </xmp>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>css</strong></td>
+          <td>
+            <xmp>
+.intro {
+  font-weight: bold;
+}
+            </xmp>
+          </td>
+        </tr>
+      </table>
+      <h2>Element selectors</h2>
+      <table>
+        <tr>
+          <td><strong>html</strong></td>
+          <td>
+            <xmp>
+<p>This is a normal paragraph</p>
+            </xmp>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>css</strong></td>
+          <td>
+            <xmp>
+p {
+  line-height: 1.5rem;
+}
+            </xmp>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+        <h1>Where to type CSS?</h1>
+        <h2>Task</h2>
+        <p>1. Add the following line to the &lt;head&gt; of one of your pages</p>
+        <xmp>
+          <head>
+            <link rel="stylesheet" href="stylesheet.css">
+          </head>
+        </xmp>
+        <p>2. Create a new file called <strong>stylesheet.css</strong></p>
+        <p>3. Add the following CSS to the stylesheet.css:</p>
+        <xmp>
+          .warning {
+              color: red;
+          }
+        </xmp>
+        <p>4. Add a red link to one of your pages, using the css class <code>warning</code></p>
+    </section>
+
+
+    <section>
+      <h1>Find the mistakes 1</h1>
+      <xmp>
+        <html>
+          <head>
+            <title>Title of the Page</title>
+          <body>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 1</h1>
+      <xmp>
+        <html>
+          <head>
+            <title>Title of the Page</title>
+          </head><!-- Head needs to be closed -->
+          <body>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 2</h1>
+      <xmp>
+        <html>
+          <body>
+            <table>
+              <thead>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </thead>
+              <tbody>
+                <td>Salt</td>
+                <td>a little bit</td>
+                <td>Oil</td>
+                <td>1 tablespoon</td>
+              </tbody>
+            </table>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 2</h1>
+      <xmp>
+        <html>
+          <body>
+            <table>
+              <thead>
+                <tr><!-- tr was missing -->
+                  <th>Ingredient</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><!-- tr was missing -->
+                  <td>Salt</td>
+                  <td>a little bit</td>
+                </tr>
+                <tr><!-- tr was missing -->
+                  <td>Oil</td>
+                  <td>1 tablespoon</td>
+                </tr>
+              </tbody>
+            </table>
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 3</h1>
+      <xmp>
+        <html>
+          <head>
+            <title>Some page title</title>
+          </head>
+          <body>
+            <p>
+              Some text about the page here
+            </p>
+            <-- A comment, that the visitor cannot see in the browser -->
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 3</h1>
+      <xmp>
+        <html>
+          <head>
+            <title>Some page title</title>
+          </head>
+          <body>
+            <p>
+              Some text about the page here
+            </p>
+            <!-- a comment is done like this: -->
+            <!-- A comment, that the visitor cannot see in the browser -->
+          </body>
+        </html>
+      </xmp>
+    </section>
+
+
+    <section>
+      <h1>Find the mistakes 4</h1>
+      <table class="mistake">
+        <tr>
+          <td>
+            <xmp>
+<html>
+  <head>
+    <title>Some page title</title>
+  </head>
+  <body>
+    <h1>
+      The Title
+    </h1>
+    <p>
+      Some the about the homepage
+    </p>
+    <ul><li>Scrambled Eggs</li>
+      <li>Blue Milk</li>
+      <li>Smashed Potatoes</li>
+      <li>Burger and Fries</ul>
+  </body>
+</html>
+            </xmp>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h1>Solution 4</h1>
+      <table class="mistake">
+        <tr>
+          <td>
+            <xmp>
+<html>
+  <head>
+    <title>Some page title</title>
+  </head>
+  <body>
+    <h1>
+      The Title
+    </h1>
+    <p>
+      Some the about the homepage
+    </p>
+    <ul><li>Scrambled Eggs</li>
+      <li>Blue Milk</li>
+      <li>Smashed Potatoes</li>
+      <li>Burger and Fries</ul>
+  </body>
+</html>
+            </xmp>
+          </td>
+          <td>
+            <xmp>
+<html>
+  <head>
+    <title>Some page title</title>
+  </head>
+  <body>
+    <h1>
+      The Title
+    </h1>
+    <p>
+      Some the about the homepage
+    </p>
+    <ul>
+      <li>Scrambled Eggs</li>
+      <li>Blue Milk</li>
+      <li>Smashed Potatoes</li>
+      <li>Burger and Fries</li><!-- this closing li was missing -->
+    </ul>
+  </body>
+</html>
+            </xmp>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 5</h1>
+      <p>index.html</p>
+      <xmp>
+        <html>
+          <head>
+            <link href="stylesheet.css" rel="stylesheet">
+          </head>
+          <body>
+            <p class=".warning">
+              Some text about the page here
+            </p>
+          </body>
+        </html>
+      </xmp>
+      <p>stylesheet.css</p>
+      <xmp>
+        .warning {
+          color: red;
+        }
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Solution 5</h1>
+      <p>index.html</p>
+      <xmp>
+        <html>
+          <head>
+            <link href="stylesheet.css" rel="stylesheet">
+          </head>
+          <body>
+            <p class="warning"><!-- in HTML the class is written without dot -->
+              Some text about the page here
+            </p>
+          </body>
+        </html>
+      </xmp>
+      <p>stylesheet.css</p>
+      <xmp>
+        .warning {
+          color: red;
+        }
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Find the mistakes 6</h1>
+      <table class="mistake">
+        <tr>
+          <td>
+            <xmp>
+.warning {
+  color;red;
+.intro {
+  font-weight;bolder;
+}
+            </xmp>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h1>Solution 6</h1>
+      <table class="mistake">
+        <tr>
+          <td>
+            <xmp>
+.warning {
+  color;red;
+.intro {
+  font-weight;bolder;
+}
+            </xmp>
+          </td>
+          <td>
+            <xmp>
+.warning {
+  color: red;
+}
+.intro {
+  font-weight: bolder;
+}
+            </xmp>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h1>Examples CSS syntax</h1>
+      <xmp>
+      .warning {
+        color: red;
+      }
+      </xmp>
+
+      <p style="color: red">
+        All elements with the class "warning" should have red text
+      </p>
+    </section>
+
+    <section>
+      <h1>Examples CSS syntax</h1>
+      <xmp>
+      .error {
+        font-size: 2em;
+      }
+      </xmp>
+
+      <p style="font-size: 2em;">
+        All elements with the class "error" should have double sized text.
+      </p>
+    </section>
+
+    <section>
+      <h1>Examples CSS syntax</h1>
+      <xmp>
+      .sourcecode {
+        font-family: monospace;
+      }
+      </xmp>
+
+      <p style="font-family: monospace;">
+        All elements with the class "sourceode" should have monospaced text
+      </p>
+    </section>
+
+
+    <section>
+      <h1>Examples CSS syntax</h1>
+      <xmp>
+      .bigtext {
+        color: grey;
+        font-size: 40px;
+        font-weight: 700;
+      }
+      </xmp>
+
+      <p style="color: grey; font-size: 40px; font-weight: 700">
+        All elements with the class "bigtext" should have grey text with 40 pixels in size and
+        a bold font type.
+      </p>
+    </section>
+
+
+    <section>
+      <h1>Examples CSS syntax</h1>
+      <xmp>
+      .quotation {
+        color: blue;
+        font-family: Arial, sans-serif;
+        line-height: 2;
+      }
+      </xmp>
+
+      <p style="color: blue; font-family: sans-serif; line-height: 2">
+        All elements with the class "quotation" should have blue text with
+        the font type Arial, if it is available, or another type without serifs
+        and a line height of 2.
+      </p>
+    </section>
+
+    <section>
+        <h1>Cascading</h1>
+        <p>An element may have several classes. It inherits the properties of every class</p>
+        <p>HTML</p>
+        <xmp>
+            <a href="index.html" class="colorized underlined">blue underlined text</a>
+        </xmp>
+        <p>CSS</p>
+        <xmp>
+            .colorized {
+                color: blue;
+            }
+
+            .underlined {
+                text-decoration: underline;
+            }
+        </xmp>
+    </section>
+
+    <section>
+        <h1>More CSS text properties</h2>
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Example values</th>
+            <tr>
+                <td>font-size</td>
+                <td>12px | 22px | 2em | 120%</td>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>Verdana | Arial, sans-serif | Times New Roman | serif | sans-serif | monospace</td>
+            </tr>
+            <tr>
+                <td>font-weight</td>
+                <td>300 | 500 | 700 | bold | bolder</td>
+            </tr>
+            <tr>
+                <td>font-style</td>
+                <td>normal | italic | oblique</td>
+            </tr>
+            <tr>
+                <td>line-height</td>
+                <td>normal | 1.5em | 180% | 6px | 0.8</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Example values</th>
+            <tr>
+                <td>background-color</td>
+                <td>red | #ef1200</td>
+            </tr>
+            <tr>
+                <td>background</td>
+                <td>red | url("images/myphoto.jpg")</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>1px solid #e7e7e7 | 1rem dotted green</td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>0 | 10px | 3rem</td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>0 | 10px | 3rem</td>
+            </tr>
+        </table>
+        <p>Play around with different classes or different styles.</p>
+        <p>To find more, google for e.g. "mdn css properties"</p>
+    </section>
+  </body>
+</html>
