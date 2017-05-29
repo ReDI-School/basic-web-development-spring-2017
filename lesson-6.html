@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lesson 6 - BWD - ReDI</title>
+    <link rel="stylesheet" href="lesson.css">
+    <script src="lesson.js"></script>
+  </head>
+  <body>
+
+    <section>
+      <h1>Hello</h1>
+      <p>Lesson 6 - almost half time</p>
+      <p>You learned a lot already</p>
+      <p>Let's keep going</p>
+    </section>
+
+    <section>
+      <h1>Homework from last week</h1>
+      <p>Create a new folder, a new index.html and a new stylesheet.css <br> Link index.html with stylesheet.css and recreate this colorful page</p>
+      <p>
+        <img width="50%" src="lesson-3/colorful_page_template.png">
+      </p>
+    </section>
+
+    <section>
+      <h1>Detour</h1>
+      <p>
+        Neocities is a free service to upload your own html
+      </p>
+      <p>
+        Create an account on <code>https://neocities.org/</code>
+      </p>
+      <p>
+        Choose a nick name that you like
+      </p>
+      <p>
+        E.g. I chose <code>tils</code> and therefore
+        got <code>https://tils.neocities.org/</code>
+      </p>
+    </section>
+
+    <section>
+      <h1>Detour</h1>
+      <p>
+        OK, have an account on <code>https://neocities.org/</code> ?
+      </p>
+      <p>
+        Tell me your nickname, I'll add it to the list
+      </p>
+    </section>
+
+    <section>
+      <h1>Detour</h1>
+      <p>
+        OK, have an account on <code>https://neocities.org/</code> ?
+      </p>
+      <p>
+        Tell me your nickname, I'll add it to the list
+      </p>
+      <p>
+        Now upload your homework to your neocities site
+      </p>
+    </section>
+
+    <section>
+      <h1>Detour</h1>
+      <p>
+        OK, have an account on <code>https://neocities.org/</code> ?
+      </p>
+      <p>
+        Tell me your nickname, I'll add it to the list
+      </p>
+      <p>
+        Now upload your homework to your neocities site
+      </p>
+      <p>
+        If you haven't done the homework, you can start now with
+        <img src="lesson-6/new-file.png"> to add
+        an <code>index.html</code>
+      </p>
+    </section>
+
+    <section>
+      <h1>Pseudo classes recap</h1>
+      <p>You may change property values of elements, if you hover them</p>
+      <p>Example:</p>
+      <xmp>
+        .link {
+          color: blue;
+        }
+
+        .link:hover {
+          color: red;
+        }
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Exercise: swap photos</h1>
+      <table class="noborder">
+        <tr>
+          <td>
+            <p>
+              Build a page with a colored diff
+            </p>
+            <p>
+              That changes on hover
+            </p>
+            <style>
+              .hoverpic {
+              width: 400px;
+              height: 533px;
+              margin-left: 3rem;
+              background: lightblue;
+              }
+              .hoverpic:hover {
+              background: url(lesson-6/eyes.jpg);
+              }
+            </style>
+            <div class="hoverpic"></div>
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h1>Exercise: swap photos</h1>
+      <table class="noborder">
+        <tr>
+          <td>
+            <p>
+              Build a page with a colored diff
+            </p>
+            <p>
+              That changes on hover
+            </p>
+            <style>
+              .hoverpic {
+              width: 400px;
+              height: 533px;
+              margin-left: 3rem;
+              background: lightblue;
+              }
+              .hoverpic:hover {
+              background: url(lesson-6/eyes.jpg);
+              }
+            </style>
+            <div class="hoverpic"></div>
+          </td>
+          <td>
+            <h2>possible solution</h2>
+            <h3>HTML</h3>
+            <xmp>
+              <div class="hoverpic"></div>
+            </xmp>
+            <h3>CSS</h3>
+            <xmp>
+              .hoverpic {
+                width: 400px;
+                height: 533px;
+                margin-left: 3rem;
+                background: lightblue;
+              }
+              .hoverpic:hover {
+                background: url(lesson-6/eyes.jpg);
+              }
+            </xmp>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h1>Exercise: swap photos</h1>
+      <table class="noborder">
+        <tr>
+          <td>
+            <p>
+              Build a page with a colored diff
+            </p>
+            <p>
+              That changes on hover
+            </p>
+            <style>
+              .hoverpic2 {
+              width: 400px;
+              height: 533px;
+              margin-left: 3rem;
+              background: lightblue;
+              }
+              .hoverpic2 img {
+              opacity: 0;
+              transition: opacity 0.4s ease-in-out;
+              }
+              .hoverpic2 img:hover {
+              opacity: 1;
+              }
+            </style>
+            <div class="hoverpic2">
+              <img src="lesson-6/eyes.jpg">
+            </div>
+            <p>
+              Bonus: use transition
+            </p>
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h1>Exercise: swap photos</h1>
+      <table class="noborder">
+        <tr>
+          <td>
+            <p>
+              Build a page with a colored diff
+            </p>
+            <p>
+              That changes on hover
+            </p>
+            <style>
+              .hoverpic2 {
+              width: 400px;
+              height: 533px;
+              margin-left: 3rem;
+              background: lightblue;
+              }
+              .hoverpic2 img {
+              opacity: 0;
+              transition: opacity 0.4s ease-in-out;
+              }
+              .hoverpic2 img:hover {
+              opacity: 1;
+              }
+            </style>
+            <div class="hoverpic2">
+              <img src="lesson-6/eyes.jpg">
+            </div>
+            <p>
+              Bonus: use transition
+            </p>
+          </td>
+          <td>
+            <h2>Possible solution</h2>
+            <h3>HTML</h3>
+            <xmp>
+            <div class="hoverpic2">
+              <img src="lesson-6/eyes.jpg">
+            </div>
+            </xmp>
+            <h3>CSS</h3>
+            <xmp>
+              .hoverpic2 {
+                width: 400px;
+                height: 533px;
+                margin-left: 3rem;
+                background: lightblue;
+              }
+              .hoverpic2 img {
+                opacity: 0;
+                transition: opacity 0.4s ease-in-out;
+              }
+              .hoverpic2 img:hover {
+                opacity: 1;
+              }
+            </xmp>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h1>Homework</h1>
+      <p>On your neocities account</p>
+      <p>
+        <img width="50%" src="lesson-3/colorful_page_template.png">
+      </p>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+h1 {
+  font-family: Arial, sans-serif;
+}
+h2 {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+.directions {
+  font-family: Courier, monospace;
+}
+.ingredient {
+  color: green;
+}
