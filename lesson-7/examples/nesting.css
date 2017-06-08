@@ -1,0 +1,7 @@
+.target .paragraph {
+  background-color: blue;
+}
+
+.notarget .paragraph {
+  background-color: red;
+}
