@@ -1,0 +1,38 @@
+.target .paragraph {
+  background-color: blue;
+}
+
+.notarget .paragraph {
+  background-color: green;
+}
+
+.fader {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+}
+.fader .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 2s ease-in-out;
+
+  width: 100%;
+}
+
+.fader .image1 {
+  opacity: 1;
+}
+
+.fader .image2 {
+  opacity: 0;
+}
+
+.fader:hover .image1 {
+  opacity: 0;
+}
+
+.fader:hover .image2 {
+  opacity: 1;
+}

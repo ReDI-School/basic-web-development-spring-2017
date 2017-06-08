@@ -354,5 +354,254 @@
       </p>
       <p><strong>Exercise</strong>: Embed a video, a song and a map to your page</p>
     </section>
+
+    <section>
+      <h1>Homework: iframe</h1>
+      <p>Embed
+      <ul>
+        <li>a map as iframe</li>
+        <li>a song as iframe</li>
+        <li>a video as iframe</li>
+      </ul>
+      <p>to your webpage</p>
+
+    </section>
+
+    <section>
+      <h1>Repetition: CSS nesting</h1>
+      <p>CSS</p>
+      <xmp>
+        .luke .paragraph {
+          color: blue;
+        }
+      </xmp>
+      <p>HTML</p>
+      <xmp>
+        <setion class="luke">
+          <p class="paragraph">Which color has this text?</p>
+        </section>
+
+        <section class="richard">
+          <p class="paragraph">Another Text</p>
+        </section>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Repetition: CSS nesting</h1>
+      <p>CSS</p>
+      <xmp>
+        .luke .paragraph {
+          color: blue;
+        }
+
+        .richard .paragraph {
+          color: red;
+        }
+      </xmp>
+      <p>HTML</p>
+      <xmp>
+        <setion class="luke">
+          <p class="paragraph">Which color has this text?</p>
+        </section>
+
+        <section class="richard">
+          <p class="paragraph">And this one?</p>
+        </section>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Repetition: CSS nesting</h1>
+      <p>CSS</p>
+      <xmp>
+        .luke.paragraph {
+          color: blue;
+        }
+
+        .richard.paragraph {
+          color: red;
+        }
+      </xmp>
+      <p>HTML</p>
+      <xmp>
+        <setion class="luke">
+          <p class="paragraph">Which color has this text?</p>
+        </section>
+
+        <section class="richard">
+          <p class="paragraph">And this one?</p>
+        </section>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>CSS multiple classes</h1>
+      <p>Imagine the following CSS rule:</p>
+      <xmp>
+        .big.warning {
+          color: red;
+          font-size: 4em;
+        }
+      </xmp>
+      <p>It will only apply to elements, that have <strong>both</strong> classes <code>.big</code> <strong>and</strong> <code>.warning</code>.</p>
+      <xmp>
+        <p class="big">unchanged</p>
+
+        <p class="warning">unchanged</p>
+
+        <p class="big warning">red and four times bigger</p>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>CSS multiple classes</h1>
+      <p>CSS</p>
+      <xmp>
+        .important {
+          font-weight: 900;
+        }
+
+        .notice {
+          text-decoration: underline;
+        }
+
+        .important.notice {
+          color: red;
+        }
+      </xmp>
+      <p>HTML</p>
+      <xmp>
+        <p class="important">How does this text look?</p>
+        <p class="notice">How does the second paragraph look?</p>
+        <p class="important notice">And the third?</p>
+      </xmp>
+    </section>
+
+    <section>
+      <h1>CSS multiple classes</h1>
+      <style>
+        .important {
+          font-size: 5em;
+          font-family: monospace;
+        }
+
+        .notice {
+          text-decoration: underline;
+        }
+
+        .important.notice {
+          color: red;
+        }
+      </style>
+
+        <p class="important">How does this text look?</p>
+        <p class="notice">How does the second paragraph look?</p>
+        <p class="important notice">And the third?</p>
+    </section>
+
+    <section>
+      <h1>Color codes</h1>
+      <p><code>background-color</code>, <code>color</code> and <code>border-color</code>
+        accept different color values, e.g.:</p>
+      <ul>
+        <li><code>red</code></li>
+        <li><code>#ff0000</code></li>
+        <li><code>rgb(255, 0, 0)</code></li>
+        <li><code>rgba(255, 0, 0, 1)</code></li>
+        <li><code>hsl(0, 100%, 50%)</code></li>
+        <li><code>hsla(0, 100%, 50%, 1)</code></li>
+      </ul>
+      <!--<p>All of them are pure red.</p>-->
+    </section>
+
+    <section>
+      <h1>Color codes</h1>
+      <p><code>background-color</code>, <code>color</code> and <code>border-color</code>
+        accept different color values, e.g.:</p>
+      <ul>
+        <li><code>red</code></li>
+        <li><code>#ff0000</code></li>
+        <li><code>rgb(255, 0, 0)</code></li>
+        <li><code>rgba(255, 0, 0, 1)</code></li>
+        <li><code>hsl(0, 100%, 50%)</code></li>
+        <li><code>hsla(0, 100%, 50%, 1)</code></li>
+      </ul>
+      <p>All of them are pure red.</p>
+      <p><strong>Exercise:</strong> Assign different color values to a block and see how it changes</p>
+      <xmp>
+        <figure class="colorful"></figure>
+
+        .colorful {
+          width: 50px;
+          height: 50px;
+
+          background-color: rgba(0, 0, 150, 0.3); /* try out different colors here */
+        }
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Pseudo class :nth-child()</h1>
+      <p>nth means 1st, 2nd, 3rd, 4th and so on. <code>n</code> is any whole number</p>
+      <p>The pseudo class selects the sibling element in parantheses</p>
+      <xmp>
+        /* select the second sibling in the group of selectors */
+        selector:nth-child(2) {}
+      </xmp>
+      <xmp>
+        /* select the 10th sibling in the group of selectors */
+        selector:nth-child(10) {}
+      </xmp>
+
+    </section>
+
+    <section>
+      <h1>Pseudo class :nth-child()</h1>
+      <xmp>
+        <ul class="list">
+          <li class="listitem">Abdul</li>
+          <li class="listitem">Ahmad</li>
+          <li class="listitem">Ali</li>
+          <li class="listitem">Debasish</li>
+          <li class="listitem">Farnaz</li>
+          <li class="listitem">Givara</li>
+          <li class="listitem">Hamzeh</li>
+          <li class="listitem">Isatou</li>
+          <li class="listitem">Khawar</li>
+          <li class="listitem">Mazen</li>
+          <li class="listitem">Nedal</li>
+          <li class="listitem">Precious</li>
+        </ul>
+      </xmp>
+      <p>How do I make every second line lightgrey?</p>
+    </section>
+
+    <section>
+      <h1>Pseudo class :nth-child()</h1>
+      <xmp>
+        <ul class="list">
+          <li class="listitem">Abdul</li>
+          <li class="listitem">Ahmad</li>
+          <li class="listitem">Ali</li>
+          <li class="listitem">Debasish</li>
+          <li class="listitem">Farnaz</li>
+          <li class="listitem">Givara</li>
+          <li class="listitem">Hamzeh</li>
+          <li class="listitem">Isatou</li>
+          <li class="listitem">Khawar</li>
+          <li class="listitem">Mazen</li>
+          <li class="listitem">Nedal</li>
+          <li class="listitem">Precious</li>
+        </ul>
+      </xmp>
+      <p>CSS</p>
+      <xmp>
+        .listitem:nth-child(even) {
+          background-color: lightgrey;
+        }
+      </xmp>
+
+    </section>
   </body>
 </html>
