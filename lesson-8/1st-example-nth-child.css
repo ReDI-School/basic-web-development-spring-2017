@@ -1,0 +1,30 @@
+
+.listitem:nth-last-child(3n-1) {
+  background-color: red;
+}
+
+/*
+.listitem:first-child {
+  background-color: red;
+}
+.listitem:last-child {
+  background-color: red;
+}
+
+.listitem:nth-child(5) {
+  background-color: lightgrey;
+}
+.listitem:nth-child(n+6) {
+  background-color: DarkSeaGreen;
+}
+.listitem:nth-child(-n+5) {
+  background-color: red;
+}
+.listitem:nth-child(4n-7) {
+  background-color: red;
+}
+
+
+
+
+*/

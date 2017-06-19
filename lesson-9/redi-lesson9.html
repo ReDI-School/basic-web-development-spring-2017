@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lesson 9 - BWD - ReDI</title>
+    <link rel="stylesheet" href="lesson.css">
+    <script src="lesson.js"></script>
+  </head>
+  <body>
+
+    <section>
+      <h1>Document Flow</h1>
+      <p>Document flow refers to the way the browser positions elements on the page.</p>
+      <p>In general, the browser starts at the top left of the page and starts placing elements one after another.</p>
+
+    </section>
+
+    <section>
+      <h1>Float: what is this?</h1>
+      <p><code>Float</code> is a CSS positioning property.</p>
+      <p>In its simplest use, the <code>float</code> property can be used to wrap text around images.</p>
+      <img style="floeat: left; margin-left: 7%; margin-right: 5%;" src="img/print-layout.png" alt="">
+      <img src="img/web-layout.png" alt="">
+      <p>Floated elements remain a part of the flow of the web page.</p>
+
+      <xmp>
+        /* Formula */
+        .class {
+          float: right;
+        }
+      </xmp>
+      <p>It can be left, right, none or inherit.</p>
+
+    </section>
+
+    <section>
+      <h1>Float</h1>
+      <p>If <code>float</code> used, when that image changes size the text in the box will reflow to accommodate:</p>
+      <img style="floeat: left; margin-left: 7%; margin-right: 5%;" src="img/reflow-example-1.png" alt="">
+
+    </section>
+
+    <section>
+      <h1>Clear - what is this?</h1>
+      <p>The <code>clear</code> property is used to control the behavior of floating elements.</p>
+      <p>Elements after a floating element will flow around it. To avoid this, use the clear property.</p>
+      <p>The <code>clear</code> property specifies on which sides of an element floating elements are not allowed to float:</p>
+      <img style="floeat: left; margin-left: 7%; margin-right: 5%;" src="img/clear.png" alt="">
+
+      <xmp>
+        /* Formula */
+        .class {
+          clear: left;
+        }
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Float and Clear</h1>
+      <p>Play around with the properties <code>float</code> and <code>clear</code></p>
+      <p><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_clear" target="_blank">Click here</a><p>
+
+    </section>
+
+    <section>
+      <h1>Float</h1>
+      <p>Exercise the float property</p>
+      <iframe style="float: left; margin-left: 7%" width="560" height="315" src="https://www.youtube.com/embed/bGINZ4QXYg4" frameborder="0" allowfullscreen></iframe>
+      <iframe style="float: left; margin-left: 7%" width="560" height="315" src="https://www.youtube.com/embed/zVqwDSyN8GY" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <h1>Homework!</h1>
+      <p>Look what the <code>clearfix</code> CSS property is.</p> 
+    </section>
+
+
+  </body>
+</html>

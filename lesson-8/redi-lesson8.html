@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lesson 8 - BWD - ReDI</title>
+    <link rel="stylesheet" href="lesson.css">
+    <script src="lesson.js"></script>
+  </head>
+  <body>
+
+    <section>
+      <h1>Pseudo class :nth-child()</h1>
+      <p>:nth-child(n) selector matches every element that is the nth child, regardless of type, of its parent.</p>
+      <p>nth means 1st, 2nd, 3rd, 4th and so on. <code>n</code> is any whole number</p>
+      <p>The pseudo class selects the sibling element in parantheses</p>
+      <xmp>
+        /* Formula */
+
+        class:nth-child(number) {}
+      </xmp>
+      <xmp>
+        /* select the second sibling in the group of selectors */
+
+        selector:nth-child(2) {}
+      </xmp>
+      <xmp>
+        /* select the 10th sibling in the group of selectors */
+
+        selector:nth-child(10) {}
+      </xmp>
+
+    </section>
+
+    <section>
+      <h1>Pseudo class :nth-child()</h1>
+      <xmp>
+        <ul class="list">
+          <li class="listitem">Abdul</li>
+          <li class="listitem">Ahmad</li>
+          <li class="listitem">Ali</li>
+          <li class="listitem">Debasish</li>
+          <li class="listitem">Farnaz</li>
+          <li class="listitem">Givara</li>
+          <li class="listitem">Hamzeh</li>
+          <li class="listitem">Isatou</li>
+          <li class="listitem">Khawar</li>
+          <li class="listitem">Mazen</li>
+          <li class="listitem">Nedal</li>
+          <li class="listitem">Precious</li>
+        </ul>
+      </xmp>
+      <p>How do I make every second line lightgrey?</p>
+      <xmp>
+        /* Formula */
+
+        class:nth-child(number) {}
+      </xmp>
+    </section>
+
+    <section>
+      <h1>Pseudo class :nth-child()</h1>
+      <xmp>
+        <ul class="list">
+          <li class="listitem">Abdul</li>
+          <li class="listitem">Ahmad</li>
+          <li class="listitem">Ali</li>
+          <li class="listitem">Debasish</li>
+          <li class="listitem">Farnaz</li>
+          <li class="listitem">Givara</li>
+          <li class="listitem">Hamzeh</li>
+          <li class="listitem">Isatou</li>
+          <li class="listitem">Khawar</li>
+          <li class="listitem">Mazen</li>
+          <li class="listitem">Nedal</li>
+          <li class="listitem">Precious</li>
+        </ul>
+      </xmp>
+      <p>CSS</p>
+      <xmp>
+        .listitem:nth-child(odd) {
+          background-color: DarkSeaGreen;
+        }
+
+        .listitem:nth-child(even) {
+          background-color: lightgrey;
+        }
+      </xmp>
+
+    </section>
+
+    <section>
+      <h1>Pseudo class :nth-child()</h1>
+      <xmp>
+        <ul class="list">
+          <li class="listitem">Abdul</li>
+          <li class="listitem">Ahmad</li>
+          <li class="listitem">Ali</li>
+          <li class="listitem">Debasish</li>
+          <li class="listitem">Farnaz</li>
+          <li class="listitem">Givara</li>
+          <li class="listitem">Hamzeh</li>
+          <li class="listitem">Isatou</li>
+          <li class="listitem">Khawar</li>
+          <li class="listitem">Mazen</li>
+          <li class="listitem">Nedal</li>
+          <li class="listitem">Precious</li>
+        </ul>
+      </xmp>
+      <p>CSS</p>
+      <xmp>
+        .listitem:nth-child(4) {
+          background-color: lightgrey;
+        }
+
+        .listitem:nth-child(n) {
+          font-weight: bold;
+        }
+
+        .listitem:nth-child(2n) {
+          font-style: italic;
+          font-weight: normal;
+        }
+      </xmp>
+    </section>
+
+  </body>
+</html>

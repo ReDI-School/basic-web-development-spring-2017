@@ -1,0 +1,168 @@
+.staff {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 5px;
+}
+
+.third {
+  clear: left;
+}
+
+
+#head{
+   position: fixed;
+   z-index: 2000;
+   width: 100%;
+   height: 100px;
+   margin-top: 0px;
+   top: 0px;
+   margin-bottom: 20px;
+   background-color: #de5755;
+  }
+
+  h1{
+   position: absolute;
+   color: white;
+   font-size: 45pt;
+   width: 300px;
+   height: 80px;
+   text-align: center;
+   margin-top: 60px;
+   left: 0;
+   right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   border: 1px solid white;
+   font-family: 'Noto Sans', sans-serif;
+   background-color:#de5755;
+  }
+  h2{
+   position: absolute;
+   font-family: 'Noto Sans', sans-serif;
+   display: inline;
+   margin-top: 10px;
+
+   font-size: 25pt;
+   border: 0px solid black;
+  }
+
+  #page{
+   width: 960px;
+   overflow: auto;
+
+
+   border: 0px solid black;
+   margin: 0px auto 0px auto;
+   margin-top: 150px;
+  }
+
+
+  nav{
+   border: 0px solid white;
+   width: 960px;
+   height: auto;
+   height: 100px;
+   margin: 0px auto 0px auto;
+  }
+
+  a{
+
+   text-decoration: none;
+   color: white;
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 15pt;
+   margin: 15px;
+
+  }
+
+
+  #first{
+   border: 0px solid black;
+   width: 200px;
+   float:left;
+   margin-top: 75px;
+
+  }
+  #second{
+   border: 0px solid black;
+   width: 200px;
+   display: inline;
+   float: right;
+   margin-top: 75px;
+
+  }
+
+ div.staff{
+        border: 1px solid black;
+
+  }
+
+
+div.staff a:hover{
+
+}
+
+
+  .staff h3{
+   font-family: 'Noto Sans', sans-serif;
+   color: white;
+   text-align: left;
+   margin-left: 5px;
+   margin: 5px;
+
+  }
+  .staff img{
+   width: 200px;
+   margin-top: 10px;
+   margin-left: 5px;
+
+  }
+  .staff p{
+   width: 250px;
+   margin-left: 5px;
+
+   color:white;
+  }
+  .icons{
+   border: 0px solid black;
+   width: 150px;
+  }
+  .icons a{
+   margin-left: 5px;
+   border: 0px solid black;
+  }
+  .fa-facebook-official{
+   color: #4A679F;
+
+  }
+  .fa-twitter-square{
+   color: #626F81;
+
+  }
+
+  a #owners{
+   text-decoration: underline;
+
+
+  }
+
+  footer{
+   position: relative;
+   width: 100%;
+   height: 100px;
+   background-color: #de5755;
+   bottom: 0px;
+   border: 1px solid black;
+   margin-top: 2000px;
+
+  }
+
+  footer p{
+   text-align: center;
+   margin-top: 40px ;
+   margin: 0px auto 0px auto;
+   font-family: 'Noto Sans', sans-serif;
+   color: white;
+   font-size: 15pt;
+  }
