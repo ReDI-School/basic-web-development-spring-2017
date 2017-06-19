@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson 9 - BWD - ReDI</title>
+    <link rel="stylesheet" href="lesson.css">
+    <script src="lesson.js"></script>
+  </head>
+  <body>
+    <section>
+      <h1>Repeat from last week: Document Flow</h1>
+      <p>Document flow refers to the way the browser positions elements on the page.</p>
+      <p>In general, the browser starts at the top left of the page and starts placing elements one after another.</p>
+      <img style="float: left; margin-left: 7%; margin-right: 5%;" src="lesson-8/img/print-layout.png" alt="">
+      <img src="lesson-8/img/web-layout.png" alt="">
+      <p>Floated elements remain a part of the flow of the web page.</p>
+
+      <xmp>
+        .something {
+          float: right;
+        }
+      </xmp>
+      <p>
+        It can be <code>left</code>, <code>right</code>, <code>none</code> or <code>inherit</code>.
+      </p>
+    </section>
+
+    <section>
+      <h1>Repeat: Clear - what is this?</h1>
+      <p>Elements after a floating element will flow around it. To avoid this, use the clear property.</p>
+      <p>The <code>clear</code> property specifies on which sides of an element floating elements are not allowed to float.</p>
+      <style>
+        .example-container {
+        padding: 0 3rem;
+        width: 34g0px;
+        height: 400px;
+        float: left;
+        }
+        .box {
+        border: black 2px solid;
+        text-align: center;
+        margin: 10px;
+        }
+        .box-main {
+        width: 210px;
+        height: 100px;
+        }
+        .box-aside {
+        width: 80px;
+        height: 200px;
+        }
+        .box-footer {
+        width: 300px;
+        height: 50px;
+        }
+      </style>
+
+      <div class="example-container">
+        <div class="box box-main">Main</div>
+        <div class="box box-aside">Aside</div>
+        <div class="box box-footer">Footer</div>
+      </div>
+
+      <div class="example-container">
+        <div class="box box-main" style="float: left;">Main</div>
+        <div class="box box-aside" style="float: right;">Aside</div>
+        <div style="clear: both;"></div>
+        <div class="box box-footer">Footer</div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Further reading</h1>
+      <p>
+        <a href="https://css-tricks.com/all-about-floats/">css-tricks.com/all-about-floats</a>
+        (old but good article)
+      </p>
+      <p>
+        My opinion: floats are a bit weird, and it can be hard to get
+        them to do what one has in mind. There are wizards out there
+        that achieve complicated effects, but I am not one of them. It
+        sometimes helps me to think of their origin in print layout.
+      </p>
+      <p>
+        For complicated layouts, there is a new thing called Flexbox.
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks.com/snippets/css/a-guide-to-flexbox</a>.
+        Much easier! And browser support is finally good.
+      </p>
+    </section>
+
+    <section>
+      <h1>Something completely different</h1>
+      <p>Binary!</p>
+    </section>
+
+    <section>
+      <h1>Something completely different</h1>
+      <p>Binary!</p>
+      <p>Write powers of 2 on board</p>
+    </section>
+
+    <section>
+      <h1>Something completely different</h1>
+      <p>Binary!</p>
+      <p>Write powers of 2 on board</p>
+      <p>How high can you count with one hand? With two?</p>
+    </section>
+
+    <section>
+      <h1>Fundamentals of computing</h1>
+      <p>
+        In the beginning there was something like this
+        <img src="lesson-9/roehre.jpg" width="200">
+      </p>
+      <p>
+        which was replaced by this:
+        <img src="lesson-9/transistor.jpg">
+      </p>
+    </section>
+
+    <section>
+      <h1>Fundamentals of computing</h1>
+      <p>
+        With two transistors, you can build a Flip-Flop
+        <img src="lesson-9/flip-flop.svg" width="400">
+      </p>
+      <p>
+        ... which can store a single bit!
+      <p>
+    </section>
+
+    <section>
+      <h1>Fundamentals of computing</h1>
+      <p>
+        Modern chips condense millions of those into one black box:
+        <img src="lesson-9/ram.jpg" >
+      </p>
+    </section>
+    
+    <section>
+      <h1>Bit and Byte</h1>
+      <p>
+        A <strong>bit</strong> is either <code>0</code> or <code>1</code>.
+      </p>
+      <p>
+        A <strong>byte</strong> are eight bits. It can represent a
+        number from 0 up to 255.
+      </p>
+      <p>
+        A <strong>kilobyte (KB)</strong> are 1024 bytes.
+        A <strong>megabyte (MB)</strong> are 1024 kilobytes.
+        A <strong>gigabyte (GB)</strong> are 1024 megabytes.
+      </p>
+    </section>
+
+    <section>
+      <h1>CSS colors</h1>
+      <p>CSS uses three bytes to set a color. One for red, one for green, one for blue.</p>
+      <p><code>rgb(15, 128, 255)</code></p>
+      <p>another way to write it is <em>hexadecimal</em></p>
+      <p><code>#0f80ff</code></p>
+    </section>
+
+    <section>
+      <h1>CSS colors</h1>
+      <p>CSS uses three bytes to set a color. One for red, one for green, one for blue.</p>
+      <p><code>rgb(15, 128, 255)</code></p>
+      <p>another way to write it is <em>hexadecimal</em></p>
+      <p><code>#0f80ff</code></p>
+      <p><code>#</code> <code>0f</code> <code>80</code> <code>ff</code> </p>
+      <p>
+        Hexadecimal uses 16 instead of 10 "digits": 0 1 2 3 4 5 6 7 8 9 a b c d e f.
+      </p>
+      <p>
+        So <code>a</code> in hexadecimal corresponds
+        to <code>10</code> in decimal, <code>f</code>
+        to <code>15</code> in decimal. <code>ff</code> in hexadecimal
+        is <code>255</code> in decimal.
+      </p>
+    </section>
+
+    <section>
+      <h1>Homework</h1>
+      <p>Count with your hand in binary up to 31</p>
+    </section>
+
+    <section>
+      <h1>::before and ::after</h1>
+      <p>With this so called pseudo element, you can add content before or after an element through CSS</p>
+      <div class="fluent">
+        For example this html
+        <xmp class="html-code"><p class="fact">I know how to code.</p></xmp>
+        When adding this CSS
+        <xmp class="css-code">.fact::after {
+  content: "Really!";
+}</xmp>
+        it becomes:
+        <div class="result">
+          I know how to code. Really!
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>::before and ::after</h1>
+      <div class="fluent">
+        And with this CSS
+        <xmp class="css-code">.fact::before {
+  content: "Listen to me:";
+}
+.fact::after {
+  content: "Really!";
+}</xmp>
+        it becomes:
+        <div class="result">
+          Listen to me: I know how to code. Really!
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>::before and ::after</h1>
+      <p>You can also set empty content and style instead</p>
+      <style>
+        .before-box::before {
+        content: "";
+        display: inline-block;
+        border: 5px solid red;
+        width: 1rem;
+        height: 1rem;
+        position: relative;
+        top: 0.1em;
+        }
+      </style>
+      <div class="fluent">
+        <xmp class="css-code">.fact::before {
+  content: "";
+  display: inline-block;
+  border: 5px solid red;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  top: 0.1em;
+}</xmp>
+        Result:
+        <div class="result">
+          <span class="before-box">
+            I know how to code.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>::before and ::after</h1>
+      <p>What can it be used for?</p>
+      <p>
+        For example, small visual improvements. No need to put it in HTML.
+      </p>
+      <p>
+        E.g. a small arrow before each link. Example: <a href="https://www.deka-etf.de/">www.deka.de</a>
+      </p>
+      <p>
+        Or to set the <code>clear</code> property to control float.
+      </p>
+    </section>
+
+    <section>
+      <h1>::before and ::after</h1>
+      <p>
+        More about this, as usual at css-tricks:
+      </p>
+      <p>
+        <a href="https://css-tricks.com/almanac/selectors/a/after-and-before/">css-tricks.com/almanac/selectors/a/after-and-before</a>
+      </p>
+    </section>
+
+    <section>
+      <h1>::before and ::after</h1>
+      <p>
+        Exercise with float and ::after - build a page that looks like this:
+      </p>
+      <style>
+        .ba-example {
+        width: 40%;
+        border: 4px solid #9bcd7a99;
+        background: #e0efd6;
+        padding: 2rem;
+        }
+        .ba-box, .ba-footer {
+        border: 4px solid black;
+        text-align: center;
+        }
+        .ba-example .ba-box {
+        width: 5rem;
+        height: 5rem;
+        float: left;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        }
+        .ba-boxes::after {
+        content: '';
+        display: block;
+        clear: both;
+        }
+      </style>
+
+      <div class="ba-example">
+        <div class="ba-boxes">
+          <div class="ba-box">Box 1</div>
+          <div class="ba-box">Box 2</div>
+          <div class="ba-box">Box 3</div>
+        </div>
+        <div class="ba-footer">Footer box</div>
+      </div>
+
+      <p>
+        The boxes should float to the left.
+      </p>
+      <p>
+        <code>clear</code> should
+        be applied using <code>::after</code>.
+      </p>
+    </section>
+
+    <section>
+      <h1>On mobile</h1>
+
+      <p>How does your site look on a mobile phone?</p>
+
+      <p>
+        Navigate to the public URL of your neocities site <small>(if
+          your phone doesn't have internet, ask your
+          neighbour)</small>
+      </p>
+    </section>
+
+    <section>
+      <h1>On mobile</h1>
+
+      <p>Not so great - the text is very small</p>
+
+      <div class="fluent">
+        Add this HTML in <code>head</code>:
+        <xmp class="html-code"><meta name="viewport" content="width=device-width, initial-scale=1"></xmp>
+      </div>
+
+      <p>
+        A common way to make websites look OK on mobile.
+      </p>
+    </section>
+  </body>
+</html>
