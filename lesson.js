@@ -1,23 +1,30 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  var slides = document.getElementsByTagName('section')
+  var sections = document.getElementsByTagName('section')
+  var steps = {}
 
-  // Add numbered ids to slides
-  for(var i = 0; i < slides.length; i++) {
-    slides[i].id = 'slide-' + (i + 1)
-  }
-
-  var changeSlideBy = function(by) {
-    var current, next, match = window.location.hash.match(/#slide-(\d+)/)
-    if (match) {
-      current = parseInt(match[1])
-    } else {
-      current = 1
+  // Add numbered ids to sections
+  for(var i = 0; i < sections.length; i++) {
+    var anchor = sections[i].id = 'slide-' + (i + 1)
+    steps[anchor].push({
+      anchor: anchor
+    })
+    var substeps = sections[i].getElementsByClassName('step')
+    for(var l = 0; l < substeps.length; l++) {
+      steps.push({
+        anchor: anchor + '-' + (l + 1)
+      })
     }
-    var next = current + by
-    if (next < 1) { next = 1 }
-    if (next > slides.length) { next = slides.length }
-    window.location.hash = "#slide-" + next
+  }
+  console.log(steps)
+
+  var changeAnchorBy = function(by) {
+    var currentIndex = steps.indexOf(window.location.hash.slice(1))
+    if (currentIndex < 0) { currentIndex = 1 }
+    var nextIndex = currentIndex + by
+    if (nextIndex < 0) { nextIndex = 0 }
+    if (nextIndex > steps.length - 1) { nextIndex = steps.length - 1 }
+    window.location.hash = "#" + steps[nextIndex]
   }
 
   document.onkeypress = function(event) {
@@ -26,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (event.key == 'ArrowLeft') {
-      changeSlideBy(-1)
+      changeAnchorBy(-1)
     }
     if (event.key == 'ArrowRight') {
-      changeSlideBy(1)
+      changeAnchorBy(1)
     }
   }
 })
