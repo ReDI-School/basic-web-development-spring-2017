@@ -100,38 +100,19 @@ td,th {
   border-right:1px solid #eee;
 }
 
+table.noborder td,
+table.noborder th,
+table.noborder,
+table.noborder tr {
+  border: 0;
+}
+
 xmp {
   font-size: 24px;
 }
 
 .image {
   margin:2rem 3rem;
-}
-
-.slide55 {
-  border:3px solid #c00;
-  margin:3rem;
-  width:50%;
-  height:200px;
-}
-
-.slide56 {
-  border:3px solid #c00;
-  margin:3rem;
-  display:inline-block;
-  width:200px;
-  height:40px;
-}
-
-.withclearfix {
-  background-color:#c00;
-}
-
-table.noborder td,
-table.noborder th,
-table.noborder,
-table.noborder tr {
-  border:0;
 }
 
 .first {
