@@ -27,11 +27,13 @@ h4 {
 section {
   /* make it so high that only one section is shown at once */
   min-height: 1200px;
+  padding: 0 3rem;
 }
 
 section h1 {
   margin:0;
-  padding:3rem 3rem;
+  padding: 3rem;
+  margin: 0 -3rem;
   font-weight:400;
   background-color:#59ADC5;
   color:#fff;
@@ -49,11 +51,10 @@ section h1 strong {
 section p {
   font-size: 1.8rem;
   line-height: 2.8rem;
-  padding: 0 3rem;
 }
 
 section ul {
-  margin: 2rem 1rem 0 3rem;
+  margin: 2rem 1rem 0 0;
 }
 
 section li {
@@ -108,7 +109,34 @@ table.noborder tr {
 }
 
 xmp {
-  font-size: 24px;
+  font-size: 1.8rem;
+  line-height: 2.0rem;
+}
+
+/* A component to mix text and code examples together */
+.fluent {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.fluent .html-code, .fluent .css-code, .fluent .result {
+  padding: 0.5rem;
+  margin: 0.7rem 0;
+}
+
+.fluent .html-code {
+  border: 4px solid #ffc27980;
+  background: #f5eddb;
+}
+
+.fluent .css-code {
+  border: 4px solid #cc36;
+  background: #fcfcaa4d;
+}
+
+.fluent .result {
+  border: 4px solid #9bcd7a99;
+  background: #e0efd6;
 }
 
 .image {
