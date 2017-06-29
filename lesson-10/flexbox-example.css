@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* activate flexbox */
+  display: flex;
+
+  margin: 20px;
+  border: 2px solid rgb(180, 180, 180);
+}
+
+.item {
+  /* every item has the same size */
+  flex-grow: 1;
+
+  background-color: rgb(255, 180, 180);
+  margin: 20px;
+}
+
+.item.double {
+
+  /* this item is double the size (2) */
+  flex-grow: 2;
+}

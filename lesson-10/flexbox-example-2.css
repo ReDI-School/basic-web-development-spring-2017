@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* activate flexbox */
+  display: flex;
+  flex-flow: row wrap;
+
+  margin: 20px;
+  border: 2px solid rgb(180, 180, 180);
+}
+
+.container > * {
+  flex: 1 100%;
+
+  margin: 20px;
+  background: rgba(255, 100, 100, 0.1)
+}
+
+.header {
+  order: 1;
+}
+
+.main {
+  order: 3;
+}
+
+.aside {
+  order: 2;
+}
+
+.footer {
+  order: 4;
+}

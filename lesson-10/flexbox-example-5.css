@@ -1,0 +1,67 @@
+/*html, body {
+  margin: 0;
+  padding: 0;
+}*/
+
+.container {
+  /* activate flexbox */
+  display: flex;
+
+  /* child items are in a row by default*/
+  flex-direction: row;
+
+  /* if the space isn't enough, wrap the item to the next line */
+  flex-wrap: wrap;
+}
+
+.header, .main, .aside, .footer {
+  /* We tell all items to be 100% width */
+  flex-grow: 1;
+
+  /* elements are all 100% in width by default */
+  flex-basis: 100%;
+
+  font: 20px sans-serif;
+  padding: 1em;
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  .aside {
+    flex-basis: auto;
+  }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much
+   * width as the other two sidebars
+   */
+  .main {
+    flex-grow: 2;
+    flex-basis: 0px;
+  }
+
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+.header {
+  background-color: lightblue;
+}
+
+.footer {
+  background-color: gold;
+}
+
+.aside-1 {
+  background-color: lightpink;
+}
+
+.aside-2 {
+  background-color: lightgreen;
+}
