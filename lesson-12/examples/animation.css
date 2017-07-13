@@ -1,0 +1,69 @@
+@keyframes richard {
+  25% {
+    top: 10%;
+    width: 200px;
+    background-color: lightblue;
+  }
+
+  50% {
+    left: 80%;
+    height: 200px;
+    transform: rotate(120deg);
+  }
+
+  75% {
+    left: 10%;
+    top: 65%;
+    background-color: yellow;
+    border-radius: 100px;
+  }
+
+  90% {
+    background-color: violet;
+  }
+
+  100% {
+    border-radius: 0;
+    transform: rotate(0deg);
+    background-color: red;
+  }
+
+}
+
+@keyframes precious {
+  25% {
+    width: 250px;
+  }
+
+  75% {
+    width: 20px;
+  }
+
+  100% {
+    background-color: blue;
+  }
+}
+
+.animated {
+  animation: richard 10s infinite;
+  animation-delay: 1s;
+
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+
+.alsoanimated {
+  animation: richard 2s infinite;
+  animation-delay: 5s;
+
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
