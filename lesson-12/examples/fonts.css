@@ -1,0 +1,9 @@
+.paragraph {
+  font-size: 2em;
+  font-family: 'Amatic SC', cursive;
+}
+
+.paragraph--smaller {
+  font-size: 0.8em;
+  font-family: 'Shadows Into Light Two', cursive;
+}
